@@ -18,9 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         // Set default view controller
-        let productViewController = ProductListViewController.init(nibName: ProductListViewController.identifier, bundle: nil)
-        self.window?.rootViewController = productViewController
-        self.window?.makeKeyAndVisible()
+        let productListConfigurator = ProductListConfigurator()
+        let rootViewController = productListConfigurator.configured(ProductListViewController())
+        let navController = UINavigationController(rootViewController: rootViewController)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
