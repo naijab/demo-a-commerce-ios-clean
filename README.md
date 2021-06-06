@@ -1,6 +1,6 @@
 # A-Commerce
 
-> iOS App implementation in Clean Swift architecure
+> iOS App implementation in Clean Swift architecture
 
 ## How to run
 - `pod install` for install dependencies
