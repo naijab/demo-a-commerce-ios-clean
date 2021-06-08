@@ -7,15 +7,15 @@
 
 import UIKit
 
-extension UIView
-{
-    func fixInView(_ container: UIView!) -> Void{
-        self.translatesAutoresizingMaskIntoConstraints = false;
-        self.frame = container.frame;
-        container.addSubview(self);
-        NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: container, attribute: .leading, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: container, attribute: .trailing, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: container, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
+extension UIView {
+    func applyBorderRadius(size: CGFloat = 9) {
+        self.layer.cornerRadius = size
+    }
+    
+    func applyShadow(size: CGFloat = 9) {
+        self.layer.shadowColor = UIColor.lightGray.cgColor
+        self.layer.shadowRadius = size
+        self.layer.shadowOpacity = 0.1
+        self.layer.shadowOffset = CGSize(width: 0, height: 0)
     }
 }
