@@ -29,7 +29,10 @@ final class ProductCollectionViewCell: UICollectionViewCell {
     func bindData(with data: Product) {
         productTitle?.text = data.title ?? ""
         productPrice?.text = data.displayPrice ?? "0"
-        productImage?.kf.setImage(with: URL(string: data.image ?? "https://static.linemap.co/TLM/webcache/empty_photo-400x300.png"))
+        productImage?.kf.setImage(
+            with: URL(string: data.image ?? ""),
+            placeholder: UIImage(named: "empty_photos")
+        )
         productNew?.isHidden = !(data.isNewProduct ?? false)
     }
 
