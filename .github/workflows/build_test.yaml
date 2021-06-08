@@ -16,8 +16,8 @@ jobs:
     - name: List available Xcode versions
       run: ls /Applications | grep Xcode
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_12.2.app && /usr/bin/xcodebuild -version
+      run: sudo xcode-select -switch /Applications/Xcode_12.5.app && /usr/bin/xcodebuild -version
     - name: Install xcpretty
       run: sudo gem install xcpretty
     - name: Run unit tests
-      run: xcodebuild test -scheme A-Commerce -workspace A-Commerce.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.2' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild test -scheme A-Commerce -workspace A-Commerce.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.5' | xcpretty && exit ${PIPESTATUS[0]}
