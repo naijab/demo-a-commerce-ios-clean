@@ -7,6 +7,7 @@ target 'A-Commerce' do
 
   # Pods for A-Commerce
   pod 'Alamofire', '~> 5.2'
+  pod 'Kingfisher', '~> 6.3'
   pod 'ObjectMapper', '~> 4.2'
 
   target 'A-CommerceTests' do

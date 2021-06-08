@@ -17,6 +17,9 @@ protocol IProductListViewControllerOutput: AnyObject {
 }
 
 final class ProductListViewController: UIViewController {
+   
+    private var products: [Product] = []
+    
     var interactor: IProductListInteractorInput?
     var router: IProductListRoutingLogic?
         
@@ -25,24 +28,95 @@ final class ProductListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setTitle()
-        
+        setCollectionView()
         interactor?.getProductList()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        productCollectionView.collectionViewLayout.invalidateLayout()
     }
     
     private func setTitle() {
         self.title = "Products"
+    }
+    
+    private func setCollectionView() {
+        productCollectionView.register(
+            ProductCollectionViewCell.nib(),
+            forCellWithReuseIdentifier: ProductCollectionViewCell.identifier
+        )
+        productCollectionView.delegate = self
+        productCollectionView.dataSource = self
+        productCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
     }
 
 }
 
 extension ProductListViewController: IProductListViewControllerInput {
     func showProductListSuccess(products: [Product]) {
-        // TODO: Update table view
+        self.products = products
         
-        print("Products: \(products)")
+        print("Product: \(self.products)")
+        
+        DispatchQueue.main.async {
+            self.productCollectionView.reloadData()
+        }
     }
     
     func showProductListFailure(message: String) {
         // TODO: Show error message on screen
+    }
+}
+
+extension ProductListViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return products.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: ProductCollectionViewCell.identifier,
+            for: indexPath
+        ) as! ProductCollectionViewCell
+        
+        cell.bindData(with: products[indexPath.row])
+
+        return cell
+    }
+}
+
+extension ProductListViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var columns: CGFloat
+        
+        let orientation = UIApplication.shared.windows.first?.windowScene?.interfaceOrientation
+        if orientation == .landscapeLeft || orientation == .landscapeRight {
+            columns = 4
+        } else {
+            columns = 2
+        }
+        
+        let spacing: CGFloat = 5
+        
+        let totalHorizontalSpacing = (columns - 1) * spacing
+        
+        let itemWidth = (collectionView.bounds.width - totalHorizontalSpacing) / spacing
+        
+        return CGSize(width: itemWidth, height: itemWidth * 1.2)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 5
+    }
+}
+
+extension ProductListViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Select item at: \(products[indexPath.row].title)")
     }
 }

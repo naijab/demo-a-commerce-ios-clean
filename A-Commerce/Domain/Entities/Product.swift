@@ -28,4 +28,12 @@ class Product: Mappable {
         isNewProduct  <- map["isNewProduct"]
         price         <- map["price"]
     }
+    
+    var displayPrice: String? {
+        guard let price = price else {
+            return nil
+        }
+        
+        return String(format: "%.2f", price)
+    }
 }

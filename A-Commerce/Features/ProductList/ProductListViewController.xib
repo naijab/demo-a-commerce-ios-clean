@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AvN-A2-Zez">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="90" width="414" height="772"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Smo-xp-0di">
                         <size key="itemSize" width="128" height="128"/>
@@ -29,19 +30,30 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start picking your treats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5X-8J-xgF">
+                    <rect key="frame" x="16" y="60" width="209" height="22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" name="darkGray"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AvN-A2-Zez" secondAttribute="trailing" id="2m1-F6-eNM"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AvN-A2-Zez" secondAttribute="bottom" id="TOq-Pc-QVR"/>
-                <constraint firstItem="AvN-A2-Zez" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Z4U-pl-cOP"/>
-                <constraint firstItem="AvN-A2-Zez" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dFO-iC-36m"/>
+                <constraint firstItem="AvN-A2-Zez" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FQ3-6r-EgY"/>
+                <constraint firstItem="AvN-A2-Zez" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="JuV-CS-x5i"/>
+                <constraint firstItem="AvN-A2-Zez" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XiZ-aZ-23g"/>
+                <constraint firstItem="t5X-8J-xgF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="d0g-NR-t9L"/>
+                <constraint firstItem="AvN-A2-Zez" firstAttribute="top" secondItem="t5X-8J-xgF" secondAttribute="bottom" constant="8" id="rfI-cJ-fEg"/>
+                <constraint firstItem="t5X-8J-xgF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="v4S-Ra-xy7"/>
             </constraints>
-            <point key="canvasLocation" x="-132" y="153"/>
+            <point key="canvasLocation" x="-133.33333333333334" y="152.67857142857142"/>
         </view>
     </objects>
     <resources>
+        <namedColor name="darkGray">
+            <color red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
