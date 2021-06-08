@@ -50,7 +50,7 @@ final class ProductDetailViewController: UIViewController {
     
     private func setView() {
         setShowProductDetail(false)
-        errorView.isHidden = true
+        errorView?.isHidden = true
         loadingIndicator?.isHidden = true
     }
 }
@@ -67,33 +67,33 @@ extension ProductDetailViewController: IProductDetailViewControllerInput {
     }
     
     func showProductDetailSuccess(product: Product) {
-        productTitle.text = product.title ?? ""
-        productPrice.text = product.displayPrice ?? "0"
-        productImage.kf.setImage(
+        productTitle?.text = product.title ?? ""
+        productPrice?.text = product.displayPrice ?? "0"
+        productImage?.kf.setImage(
             with: URL(string: product.image ?? ""),
             placeholder: UIImage(named: "empty_photos")
         )
-        productDetail.text = product.content ?? ""
-        productNew.isHidden = !(product.isNewProduct ?? false)
+        productDetail?.text = product.content ?? ""
+        productNew?.isHidden = !(product.isNewProduct ?? false)
         
         setShowProductDetail(true)
         
-        errorView.isHidden = true
+        errorView?.isHidden = true
     }
     
     func showProductDetailFailure(message: String) {
         setShowProductDetail(false)
         
-        errorView.isHidden = false
-        errorView.bindData(with: message)
+        errorView?.isHidden = false
+        errorView?.bindData(with: message)
     }
     
     private func setShowProductDetail(_ isShow: Bool) {
-        productTitle.isHidden = !isShow
-        productPrice.isHidden = !isShow
-        productImage.isHidden = !isShow
-        productNew.isHidden = !isShow
-        productDetail.isHidden = !isShow
+        productTitle?.isHidden = !isShow
+        productPrice?.isHidden = !isShow
+        productImage?.isHidden = !isShow
+        productNew?.isHidden = !isShow
+        productDetail?.isHidden = !isShow
     }
 }
 

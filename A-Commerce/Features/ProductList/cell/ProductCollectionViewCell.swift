@@ -24,8 +24,8 @@ final class ProductCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        containerView.applyShadow()
-        containerView.applyBorderRadius()
+        containerView?.applyShadow()
+        containerView?.applyBorderRadius()
     }
 
     func bindData(with data: Product) {

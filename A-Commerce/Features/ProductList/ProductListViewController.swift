@@ -41,7 +41,7 @@ final class ProductListViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        productCollectionView.collectionViewLayout.invalidateLayout()
+        productCollectionView?.collectionViewLayout.invalidateLayout()
     }
     
     private func setTitle() {
@@ -49,45 +49,45 @@ final class ProductListViewController: UIViewController {
     }
     
     private func setCollectionView() {
-        productCollectionView.register(
+        productCollectionView?.register(
             ProductCollectionViewCell.nib(),
             forCellWithReuseIdentifier: ProductCollectionViewCell.identifier
         )
-        productCollectionView.delegate = self
-        productCollectionView.dataSource = self
-        productCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
+        productCollectionView?.delegate = self
+        productCollectionView?.dataSource = self
+        productCollectionView?.collectionViewLayout = UICollectionViewFlowLayout()
     }
     
     private func setLoadingIndicator() {
-        loadingIndicator.isHidden = true
+        loadingIndicator?.isHidden = true
     }
     
     private func setErrorView() {
-        errorView.isHidden = true
-        errorView.delegate = self
+        errorView?.isHidden = true
+        errorView?.delegate = self
     }
 }
 
 extension ProductListViewController: IProductListViewControllerInput {
     func showLoading() {
-        loadingIndicator.isHidden = false
-        loadingIndicator.startAnimating()
+        loadingIndicator?.isHidden = false
+        loadingIndicator?.startAnimating()
     }
     
     func hideLoading() {
-        loadingIndicator.isHidden = true
-        loadingIndicator.stopAnimating()
+        loadingIndicator?.isHidden = true
+        loadingIndicator?.stopAnimating()
     }
     
     func showProductListSuccess(products: [Product]) {
         self.products = products
-        productCollectionView.reloadData()
-        errorView.isHidden = true
+        productCollectionView?.reloadData()
+        errorView?.isHidden = true
     }
     
     func showProductListFailure(message: String) {
-        errorView.isHidden = false
-        errorView.bindData(with: message)
+        errorView?.isHidden = false
+        errorView?.bindData(with: message)
     }
 }
 
@@ -114,7 +114,7 @@ extension ProductListViewController: UICollectionViewDelegateFlowLayout {
         let frameWidth = collectionView.bounds.width
         
         let itemWidth = (frameWidth / 2) - 3
-        let itemHeight = frameWidth * 0.6
+        let itemHeight = frameWidth * 0.65
         
         return CGSize(width: itemWidth, height: itemHeight)
     }
