@@ -7,20 +7,18 @@
 
 import Foundation
 
-protocol IProductListWorker {
+protocol IProductWorker {
     func getProductList(completion: @escaping (Result<[Product], Error>) -> Void)
 }
 
-final class ProductListWorker: IProductListWorker {
-    private let repo: IProductRepository
+final class ProductWorker: IProductWorker {
+    private let remote: IProductWorker
     
-    init(repo: IProductRepository) {
-        self.repo = repo
+    init(remote: IProductWorker) {
+        self.remote = remote
     }
     
     func getProductList(completion: @escaping (Result<[Product], Error>) -> Void) {
-        repo.getProductList(completion: completion)
+        remote.getProductList(completion: completion)
     }
-    
 }
-

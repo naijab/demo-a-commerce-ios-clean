@@ -12,6 +12,10 @@ typealias IProductListPresenterOutput = IProductListViewControllerInput
 
 final class ProductListPresenter {
     weak var viewController: IProductListPresenterOutput?
+    
+    init(viewController: IProductListPresenterOutput) {
+        self.viewController = viewController
+    }
 }
 
 extension ProductListPresenter: IProductListPresenterInput {

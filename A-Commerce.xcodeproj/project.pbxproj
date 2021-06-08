@@ -10,6 +10,8 @@
 		2F1BD24263167F2AE059EDCE /* Pods_A_Commerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DBA8F5D53CCAF488C0BBCE /* Pods_A_Commerce.framework */; };
 		50B25D1F7321E94EBE6A0DB6 /* Pods_A_Commerce_A_CommerceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70E2CBC4CCF6E3900947C12 /* Pods_A_Commerce_A_CommerceUITests.framework */; };
 		A051CDCD330553128A02A9E4 /* Pods_A_CommerceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9540BC40B6A17D737E8299BF /* Pods_A_CommerceTests.framework */; };
+		AB0E70FE266FBAFD00117AE6 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E70FC266FBAFD00117AE6 /* ProductCollectionViewCell.swift */; };
+		AB0E70FF266FBAFD00117AE6 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0E70FD266FBAFD00117AE6 /* ProductCollectionViewCell.xib */; };
 		AB5284ED266D1B46005BA72A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5284EC266D1B46005BA72A /* AppDelegate.swift */; };
 		AB5284EF266D1B46005BA72A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5284EE266D1B46005BA72A /* SceneDelegate.swift */; };
 		AB5284F7266D1B46005BA72A /* A_Commerce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB5284F5266D1B46005BA72A /* A_Commerce.xcdatamodeld */; };
@@ -23,11 +25,10 @@
 		AB528529266D237F005BA72A /* ProductListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB528528266D237F005BA72A /* ProductListConfigurator.swift */; };
 		AB52852E266D284C005BA72A /* ProductListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB52852D266D284C005BA72A /* ProductListInteractor.swift */; };
 		AB528531266D28E1005BA72A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB528530266D28E1005BA72A /* Product.swift */; };
-		AB52853A266D2C6D005BA72A /* ProductRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB528539266D2C6D005BA72A /* ProductRemoteRepository.swift */; };
-		AB52853D266D2EDF005BA72A /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB52853C266D2EDF005BA72A /* ProductRepository.swift */; };
+		AB52853A266D2C6D005BA72A /* ProductRemoteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB528539266D2C6D005BA72A /* ProductRemoteWorker.swift */; };
 		AB52853F266D308C005BA72A /* ProductListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB52853E266D308C005BA72A /* ProductListPresenter.swift */; };
 		AB528541266D31B6005BA72A /* ProductListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB528540266D31B6005BA72A /* ProductListRouter.swift */; };
-		AB528543266D3412005BA72A /* ProductListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB528542266D3412005BA72A /* ProductListWorker.swift */; };
+		AB528543266D3412005BA72A /* ProductWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB528542266D3412005BA72A /* ProductWorker.swift */; };
 		AB528547266D3E9E005BA72A /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB528546266D3E9E005BA72A /* ErrorType.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,8 @@
 		8844C4B8F7623E65F69CC4B4 /* Pods-A-CommerceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A-CommerceTests.release.xcconfig"; path = "Target Support Files/Pods-A-CommerceTests/Pods-A-CommerceTests.release.xcconfig"; sourceTree = "<group>"; };
 		9540BC40B6A17D737E8299BF /* Pods_A_CommerceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A_CommerceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DBA8F5D53CCAF488C0BBCE /* Pods_A_Commerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A_Commerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0E70FC266FBAFD00117AE6 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB0E70FD266FBAFD00117AE6 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		AB5284E9266D1B46005BA72A /* A-Commerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A-Commerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5284EC266D1B46005BA72A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB5284EE266D1B46005BA72A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,11 +76,10 @@
 		AB528528266D237F005BA72A /* ProductListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListConfigurator.swift; sourceTree = "<group>"; };
 		AB52852D266D284C005BA72A /* ProductListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListInteractor.swift; sourceTree = "<group>"; };
 		AB528530266D28E1005BA72A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		AB528539266D2C6D005BA72A /* ProductRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRemoteRepository.swift; sourceTree = "<group>"; };
-		AB52853C266D2EDF005BA72A /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		AB528539266D2C6D005BA72A /* ProductRemoteWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRemoteWorker.swift; sourceTree = "<group>"; };
 		AB52853E266D308C005BA72A /* ProductListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenter.swift; sourceTree = "<group>"; };
 		AB528540266D31B6005BA72A /* ProductListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRouter.swift; sourceTree = "<group>"; };
-		AB528542266D3412005BA72A /* ProductListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListWorker.swift; sourceTree = "<group>"; };
+		AB528542266D3412005BA72A /* ProductWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductWorker.swift; sourceTree = "<group>"; };
 		AB528546266D3E9E005BA72A /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		C20B33644B609ADF44EB26E9 /* Pods-A-Commerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A-Commerce.debug.xcconfig"; path = "Target Support Files/Pods-A-Commerce/Pods-A-Commerce.debug.xcconfig"; sourceTree = "<group>"; };
 		C54D35D9C50F62117F87FA06 /* Pods-A-Commerce-A-CommerceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A-Commerce-A-CommerceUITests.release.xcconfig"; path = "Target Support Files/Pods-A-Commerce-A-CommerceUITests/Pods-A-Commerce-A-CommerceUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AB0E70FB266FBAE500117AE6 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				AB0E70FC266FBAFD00117AE6 /* ProductCollectionViewCell.swift */,
+				AB0E70FD266FBAFD00117AE6 /* ProductCollectionViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		AB5284E0266D1B46005BA72A = {
 			isa = PBXGroup;
 			children = (
@@ -161,11 +172,11 @@
 		AB5284EB266D1B46005BA72A /* A-Commerce */ = {
 			isa = PBXGroup;
 			children = (
-				AB528532266D2A2F005BA72A /* Data */,
 				AB528534266D2A6A005BA72A /* Domain */,
-				AB528537266D2B71005BA72A /* Resources */,
 				AB528533266D2A40005BA72A /* Features */,
 				AB528538266D2BB9005BA72A /* Storyboards */,
+				AB528537266D2B71005BA72A /* Resources */,
+				AB528532266D2A2F005BA72A /* Worker */,
 				AB5284EC266D1B46005BA72A /* AppDelegate.swift */,
 				AB5284EE266D1B46005BA72A /* SceneDelegate.swift */,
 				AB5284FD266D1B47005BA72A /* Info.plist */,
@@ -195,13 +206,13 @@
 		AB52851F266D1CF5005BA72A /* ProductList */ = {
 			isa = PBXGroup;
 			children = (
+				AB0E70FB266FBAE500117AE6 /* cell */,
 				AB528528266D237F005BA72A /* ProductListConfigurator.swift */,
 				AB52852D266D284C005BA72A /* ProductListInteractor.swift */,
 				AB52853E266D308C005BA72A /* ProductListPresenter.swift */,
 				AB528540266D31B6005BA72A /* ProductListRouter.swift */,
 				AB528522266D1D6A005BA72A /* ProductListViewController.swift */,
 				AB528523266D1D6A005BA72A /* ProductListViewController.xib */,
-				AB528542266D3412005BA72A /* ProductListWorker.swift */,
 			);
 			path = ProductList;
 			sourceTree = "<group>";
@@ -221,13 +232,13 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		AB528532266D2A2F005BA72A /* Data */ = {
+		AB528532266D2A2F005BA72A /* Worker */ = {
 			isa = PBXGroup;
 			children = (
-				AB528535266D2AB3005BA72A /* Local */,
-				AB528536266D2B4D005BA72A /* Remote */,
+				AB528542266D3412005BA72A /* ProductWorker.swift */,
+				AB528539266D2C6D005BA72A /* ProductRemoteWorker.swift */,
 			);
-			path = Data;
+			path = Worker;
 			sourceTree = "<group>";
 		};
 		AB528533266D2A40005BA72A /* Features */ = {
@@ -242,26 +253,10 @@
 		AB528534266D2A6A005BA72A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				AB52853B266D2D5C005BA72A /* Repositories */,
 				AB52852F266D28D4005BA72A /* Entities */,
 				AB528546266D3E9E005BA72A /* ErrorType.swift */,
 			);
 			path = Domain;
-			sourceTree = "<group>";
-		};
-		AB528535266D2AB3005BA72A /* Local */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Local;
-			sourceTree = "<group>";
-		};
-		AB528536266D2B4D005BA72A /* Remote */ = {
-			isa = PBXGroup;
-			children = (
-				AB528539266D2C6D005BA72A /* ProductRemoteRepository.swift */,
-			);
-			path = Remote;
 			sourceTree = "<group>";
 		};
 		AB528537266D2B71005BA72A /* Resources */ = {
@@ -279,14 +274,6 @@
 				AB5284FA266D1B47005BA72A /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		AB52853B266D2D5C005BA72A /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				AB52853C266D2EDF005BA72A /* ProductRepository.swift */,
-			);
-			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +386,7 @@
 			files = (
 				AB5284FC266D1B47005BA72A /* LaunchScreen.storyboard in Resources */,
 				AB528525266D1D6A005BA72A /* ProductListViewController.xib in Resources */,
+				AB0E70FF266FBAFD00117AE6 /* ProductCollectionViewCell.xib in Resources */,
 				AB5284F9266D1B47005BA72A /* Assets.xcassets in Resources */,
 				AB528527266D2022005BA72A /* Main.storyboard in Resources */,
 			);
@@ -531,14 +519,14 @@
 				AB52853F266D308C005BA72A /* ProductListPresenter.swift in Sources */,
 				AB528547266D3E9E005BA72A /* ErrorType.swift in Sources */,
 				AB528529266D237F005BA72A /* ProductListConfigurator.swift in Sources */,
-				AB52853A266D2C6D005BA72A /* ProductRemoteRepository.swift in Sources */,
+				AB52853A266D2C6D005BA72A /* ProductRemoteWorker.swift in Sources */,
 				AB528541266D31B6005BA72A /* ProductListRouter.swift in Sources */,
-				AB52853D266D2EDF005BA72A /* ProductRepository.swift in Sources */,
 				AB5284ED266D1B46005BA72A /* AppDelegate.swift in Sources */,
+				AB0E70FE266FBAFD00117AE6 /* ProductCollectionViewCell.swift in Sources */,
 				AB52852E266D284C005BA72A /* ProductListInteractor.swift in Sources */,
 				AB5284F7266D1B46005BA72A /* A_Commerce.xcdatamodeld in Sources */,
 				AB528524266D1D6A005BA72A /* ProductListViewController.swift in Sources */,
-				AB528543266D3412005BA72A /* ProductListWorker.swift in Sources */,
+				AB528543266D3412005BA72A /* ProductWorker.swift in Sources */,
 				AB5284EF266D1B46005BA72A /* SceneDelegate.swift in Sources */,
 				AB528531266D28E1005BA72A /* Product.swift in Sources */,
 			);

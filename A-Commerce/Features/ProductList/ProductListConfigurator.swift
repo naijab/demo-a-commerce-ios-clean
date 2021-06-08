@@ -15,22 +15,20 @@ final class ProductListConfigurator: IProductListConfigurator {
     
     @discardableResult
     func configured(_ vc: ProductListViewController) -> ProductListViewController {
-        let remoteRepo = ProductRemoteRepository()
-        let repo = ProductRepository(remote: remoteRepo)
-        let worker = ProductListWorker(repo: repo)
-        let interactor = ProductListInteractor()
-        let presenter = ProductListPresenter()
-        let router = ProductListRouter()
+        let remoteWorker = ProductRemoteWorker()
+        let worker = ProductWorker(remote: remoteWorker)
         
-        router.source = vc
-
-        presenter.viewController = vc
+        let presenter = ProductListPresenter(viewController: vc)
         
-        interactor.presenter = presenter
-        interactor.productListWorker = worker
-        
-        vc.router = router
+        let interactor = ProductListInteractor(
+            presenter: presenter,
+            productWorker: worker
+        )
+      
+        let router = ProductListRouter(source: vc)
+    
         vc.interactor = interactor
+        vc.router = router
        
         return vc
     }

@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductListViewController" customModule="A_Commerce" customModuleProvider="target">
             <connections>
+                <outlet property="productCollectionView" destination="AvN-A2-Zez" id="X29-4b-ywb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,18 +19,24 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfY-WA-KGx">
-                    <rect key="frame" x="161" y="437.5" width="92" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AvN-A2-Zez">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Smo-xp-0di">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="dfY-WA-KGx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dMb-H1-P8B"/>
-                <constraint firstItem="dfY-WA-KGx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rNc-57-Jeg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AvN-A2-Zez" secondAttribute="trailing" id="2m1-F6-eNM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AvN-A2-Zez" secondAttribute="bottom" id="TOq-Pc-QVR"/>
+                <constraint firstItem="AvN-A2-Zez" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Z4U-pl-cOP"/>
+                <constraint firstItem="AvN-A2-Zez" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dFO-iC-36m"/>
             </constraints>
             <point key="canvasLocation" x="-132" y="153"/>
         </view>

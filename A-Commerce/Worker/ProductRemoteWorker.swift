@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
-final class ProductRemoteRepository: IProductRepository {
+final class ProductRemoteWorker: IProductWorker {
     
     private let baseURL = "https://ecommerce-product-app.herokuapp.com/products"
     
@@ -19,7 +19,6 @@ final class ProductRemoteRepository: IProductRepository {
                 completion(.failure(ErrorType.fetchError))
                 return
             }
-        
             let productList = Mapper<Product>().mapArray(JSONObject: response.value)
             if let productList = productList {
                 completion(.success(productList))

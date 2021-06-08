@@ -15,14 +15,22 @@ protocol IProductListInteractorOutput: AnyObject {
 }
 
 final class ProductListInteractor {
-    var presenter: IProductListPresenterInput?
-    var productListWorker: ProductListWorker?
+    let presenter: IProductListPresenterInput?
+    let productWorker: IProductWorker?
+    
+    init(
+        presenter: IProductListPresenterInput,
+        productWorker: IProductWorker
+    ) {
+        self.presenter = presenter
+        self.productWorker = productWorker
+    }
 }
 
 extension ProductListInteractor: IProductListInteractorInput {
     
     func getProductList() {
-        productListWorker?.getProductList { [self] result in
+        productWorker?.getProductList { [self] result in
             switch result {
             case .failure(let error):
                 presenter?.showProductListFailure(message: error.localizedDescription)

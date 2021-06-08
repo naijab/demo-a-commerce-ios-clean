@@ -13,6 +13,10 @@ protocol IProductListRoutingLogic {
 
 final class ProductListRouter {
     weak var source: UIViewController?
+    
+    init(source: UIViewController) {
+        self.source = source
+    }
 }
 
 extension ProductListRouter: IProductListRoutingLogic {

@@ -20,6 +20,8 @@ final class ProductListViewController: UIViewController {
     var interactor: IProductListInteractorInput?
     var router: IProductListRoutingLogic?
         
+    @IBOutlet private weak var productCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setTitle()
