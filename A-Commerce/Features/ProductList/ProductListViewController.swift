@@ -19,6 +19,9 @@ protocol IProductListViewControllerOutput: AnyObject {
 }
 
 final class ProductListViewController: UIViewController {
+    @IBOutlet private weak var errorView: UIView!
+    @IBOutlet private weak var errorLabel: UILabel!
+    @IBOutlet private weak var tryAgainButton: UIButton!
     @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
     
     private var products: [Product] = []
@@ -32,6 +35,9 @@ final class ProductListViewController: UIViewController {
         super.viewDidLoad()
         setTitle()
         setCollectionView()
+        setLoadingIndicator()
+        setErrorView()
+        
         interactor?.getProductList()
     }
     
@@ -57,7 +63,14 @@ final class ProductListViewController: UIViewController {
     private func setLoadingIndicator() {
         loadingIndicator.isHidden = true
     }
-
+    
+    private func setErrorView() {
+        errorView.isHidden = true
+    }
+    
+    @IBAction func didTryAgainTap(_ params: Any) {
+        interactor?.getProductList()
+    }
 }
 
 extension ProductListViewController: IProductListViewControllerInput {
@@ -80,7 +93,7 @@ extension ProductListViewController: IProductListViewControllerInput {
     }
     
     func showProductListFailure(message: String) {
-        // TODO: Show error message on screen
+        errorLabel?.text = message
     }
 }
 

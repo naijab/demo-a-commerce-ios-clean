@@ -11,8 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductListViewController" customModule="A_Commerce" customModuleProvider="target">
             <connections>
+                <outlet property="errorLabel" destination="26x-JW-9Ny" id="Dbd-zl-0At"/>
+                <outlet property="errorView" destination="X3j-D3-Ht3" id="yyh-bR-96B"/>
                 <outlet property="loadingIndicator" destination="h1D-NY-hih" id="Yli-y4-HlI"/>
                 <outlet property="productCollectionView" destination="AvN-A2-Zez" id="X29-4b-ywb"/>
+                <outlet property="tryAgainButton" destination="eju-yG-fhg" id="eXe-O5-bCt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AvN-A2-Zez">
-                    <rect key="frame" x="0.0" y="90" width="414" height="772"/>
+                    <rect key="frame" x="0.0" y="89.5" width="414" height="772.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Smo-xp-0di">
                         <size key="itemSize" width="128" height="128"/>
@@ -32,7 +35,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start picking your treats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5X-8J-xgF">
-                    <rect key="frame" x="16" y="60" width="209" height="22"/>
+                    <rect key="frame" x="16" y="60" width="209" height="21.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                     <color key="textColor" name="darkGray"/>
                     <nil key="highlightedColor"/>
@@ -40,12 +43,53 @@
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="h1D-NY-hih" userLabel="Loading">
                     <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                 </activityIndicatorView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X3j-D3-Ht3" userLabel="Error View">
+                    <rect key="frame" x="107" y="388" width="200" height="120"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bIz-1n-daW">
+                            <rect key="frame" x="55" y="0.0" width="90" height="120"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26x-JW-9Ny">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="74"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="red"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eju-yG-fhg">
+                                    <rect key="frame" x="0.0" y="90" width="90" height="30"/>
+                                    <color key="backgroundColor" systemColor="labelColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="Tx7-hB-mTl"/>
+                                        <constraint firstAttribute="width" constant="90" id="u6y-9f-FZf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="Try Again">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTryAgainTap:" destination="-1" eventType="touchUpInside" id="uZ5-Jh-m5D"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="bIz-1n-daW" firstAttribute="top" secondItem="X3j-D3-Ht3" secondAttribute="top" id="OGJ-BO-MUR"/>
+                        <constraint firstAttribute="bottom" secondItem="bIz-1n-daW" secondAttribute="bottom" id="U9q-8n-ghX"/>
+                        <constraint firstAttribute="height" constant="120" id="VCF-pC-PDj"/>
+                        <constraint firstAttribute="width" constant="200" id="f4X-Sw-R6d"/>
+                        <constraint firstItem="bIz-1n-daW" firstAttribute="centerX" secondItem="X3j-D3-Ht3" secondAttribute="centerX" id="vgQ-VB-Lfx"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="X3j-D3-Ht3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="2rG-Ug-34n"/>
                 <constraint firstItem="AvN-A2-Zez" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FQ3-6r-EgY"/>
                 <constraint firstItem="AvN-A2-Zez" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="JuV-CS-x5i"/>
+                <constraint firstItem="X3j-D3-Ht3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SDO-Tb-7oZ"/>
                 <constraint firstItem="AvN-A2-Zez" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XiZ-aZ-23g"/>
                 <constraint firstItem="h1D-NY-hih" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cG2-a4-VgF"/>
                 <constraint firstItem="t5X-8J-xgF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="d0g-NR-t9L"/>
@@ -60,6 +104,12 @@
         <namedColor name="darkGray">
             <color red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="red">
+            <color red="0.8901960784313725" green="0.035294117647058823" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
