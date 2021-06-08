@@ -49,7 +49,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="New" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZC-bE-4Iv">
-                                <rect key="frame" x="163.5" y="15" width="31.5" height="18"/>
+                                <rect key="frame" x="165.5" y="14" width="31.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <color key="textColor" name="red"/>
                                 <nil key="highlightedColor"/>
@@ -59,9 +59,9 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="pbL-5f-OEE" secondAttribute="trailing" constant="12" id="3Ww-77-iM9"/>
                             <constraint firstAttribute="bottom" secondItem="pbL-5f-OEE" secondAttribute="bottom" constant="12" id="7c3-ak-sCQ"/>
-                            <constraint firstItem="PZC-bE-4Iv" firstAttribute="top" secondItem="T3e-T5-Aib" secondAttribute="top" constant="15" id="T3w-cE-JRf"/>
+                            <constraint firstItem="PZC-bE-4Iv" firstAttribute="top" secondItem="T3e-T5-Aib" secondAttribute="top" constant="14" id="T3w-cE-JRf"/>
                             <constraint firstItem="pbL-5f-OEE" firstAttribute="leading" secondItem="T3e-T5-Aib" secondAttribute="leading" constant="12" id="U5d-T8-nBV"/>
-                            <constraint firstAttribute="trailing" secondItem="PZC-bE-4Iv" secondAttribute="trailing" constant="24" id="Zug-HB-b23"/>
+                            <constraint firstAttribute="trailing" secondItem="PZC-bE-4Iv" secondAttribute="trailing" constant="22" id="Zug-HB-b23"/>
                             <constraint firstItem="pbL-5f-OEE" firstAttribute="top" secondItem="T3e-T5-Aib" secondAttribute="top" constant="4" id="qc9-2o-ZSW"/>
                         </constraints>
                     </view>
