@@ -13,8 +13,7 @@
 - open **A-Commerce.xcworkspace** and run with iOS Simulator
 
 ## How to run test
-
-- `make test` (this project base on iOS 14.5)
+- `make test` and waiting for run test
 ## Architecture
 
 ![Clean Swift](clean-swift.png)
