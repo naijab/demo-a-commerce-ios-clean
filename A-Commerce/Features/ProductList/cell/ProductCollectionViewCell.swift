@@ -25,7 +25,7 @@ final class ProductCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
+
     func bindData(with data: Product) {
         productTitle?.text = data.title ?? ""
         productPrice?.text = data.displayPrice ?? "0"

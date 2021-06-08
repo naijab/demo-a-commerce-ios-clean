@@ -11,47 +11,57 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCollectionViewCell" id="gTV-IL-0wX" customClass="ProductCollectionViewCell" customModule="A_Commerce" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="233" height="258"/>
+            <rect key="frame" x="0.0" y="0.0" width="233" height="234"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="233" height="258"/>
+                <rect key="frame" x="0.0" y="0.0" width="233" height="234"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3e-T5-Aib">
-                        <rect key="frame" x="0.0" y="0.0" width="233" height="258"/>
+                        <rect key="frame" x="0.0" y="0.0" width="233" height="234"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="pbL-5f-OEE">
-                                <rect key="frame" x="12" y="4" width="209" height="242"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="pbL-5f-OEE">
+                                <rect key="frame" x="12" y="4" width="209" height="218"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="New" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZC-bE-4Iv">
-                                        <rect key="frame" x="0.0" y="0.0" width="209" height="47.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                        <color key="textColor" name="red"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KfH-Il-bJt">
-                                        <rect key="frame" x="0.0" y="58.5" width="209" height="125"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="209" height="125"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="n6E-Xe-jFO"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peanut Butter Lactation Cookies" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pe4-Zm-gpk">
-                                        <rect key="frame" x="0.0" y="194.5" width="209" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" name="gray"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZy-Qa-6RJ">
-                                        <rect key="frame" x="0.0" y="221.5" width="209" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                        <color key="textColor" name="red"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UaE-P0-VvL">
+                                        <rect key="frame" x="0.0" y="154" width="209" height="64"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Peanut Butter Lactation Cookies" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pe4-Zm-gpk">
+                                                <rect key="frame" x="0.0" y="0.0" width="209" height="35.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" name="gray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZy-Qa-6RJ">
+                                                <rect key="frame" x="0.0" y="43.5" width="209" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                <color key="textColor" name="red"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="New" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZC-bE-4Iv">
+                                <rect key="frame" x="183.5" y="15" width="31.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" name="red"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="pbL-5f-OEE" secondAttribute="trailing" constant="12" id="3Ww-77-iM9"/>
                             <constraint firstAttribute="bottom" secondItem="pbL-5f-OEE" secondAttribute="bottom" constant="12" id="7c3-ak-sCQ"/>
+                            <constraint firstItem="PZC-bE-4Iv" firstAttribute="top" secondItem="T3e-T5-Aib" secondAttribute="top" constant="15" id="T3w-cE-JRf"/>
                             <constraint firstItem="pbL-5f-OEE" firstAttribute="leading" secondItem="T3e-T5-Aib" secondAttribute="leading" constant="12" id="U5d-T8-nBV"/>
+                            <constraint firstAttribute="trailing" secondItem="PZC-bE-4Iv" secondAttribute="trailing" constant="18" id="Zug-HB-b23"/>
                             <constraint firstItem="pbL-5f-OEE" firstAttribute="top" secondItem="T3e-T5-Aib" secondAttribute="top" constant="4" id="qc9-2o-ZSW"/>
                         </constraints>
                     </view>
@@ -65,7 +75,7 @@
                 <constraint firstAttribute="trailing" secondItem="T3e-T5-Aib" secondAttribute="trailing" id="hje-Cy-d7C"/>
                 <constraint firstAttribute="bottom" secondItem="T3e-T5-Aib" secondAttribute="bottom" id="xfh-sf-8bU"/>
             </constraints>
-            <size key="customSize" width="233" height="258"/>
+            <size key="customSize" width="233" height="234"/>
             <connections>
                 <outlet property="containerView" destination="T3e-T5-Aib" id="I3d-Ip-j6E"/>
                 <outlet property="productImage" destination="KfH-Il-bJt" id="okh-ob-b8j"/>
@@ -73,7 +83,7 @@
                 <outlet property="productPrice" destination="tZy-Qa-6RJ" id="DC9-UA-IQB"/>
                 <outlet property="productTitle" destination="pe4-Zm-gpk" id="zVd-DQ-NS9"/>
             </connections>
-            <point key="canvasLocation" x="115.21739130434783" y="182.8125"/>
+            <point key="canvasLocation" x="115.21739130434783" y="172.76785714285714"/>
         </collectionViewCell>
     </objects>
     <resources>

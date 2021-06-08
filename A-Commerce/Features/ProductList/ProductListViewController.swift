@@ -110,31 +110,21 @@ extension ProductListViewController: UICollectionViewDataSource {
 
 extension ProductListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        var columns: CGFloat
         
-        // FXIME: Calculate collection view columns at 2 column when portrait
-        let orientation = UIApplication.shared.windows.first?.windowScene?.interfaceOrientation
-        if orientation == .landscapeLeft || orientation == .landscapeRight {
-            columns = 4
-        } else {
-            columns = 3
-        }
+        let frameWidth = collectionView.bounds.width
         
-        let spacing: CGFloat = 5
+        let itemWidth = (frameWidth / 2) - 3
+        let itemHeight = frameWidth * 0.6
         
-        let totalHorizontalSpacing = (columns - 1) * spacing
-        
-        let itemWidth = (collectionView.bounds.width - totalHorizontalSpacing) / spacing
-        
-        return CGSize(width: itemWidth, height: itemWidth * 1.2)
+        return CGSize(width: itemWidth, height: itemHeight)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 5
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 5
+        return 1
     }
 }
 
