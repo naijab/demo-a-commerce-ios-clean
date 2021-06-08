@@ -1,5 +1,5 @@
 # A-Commerce
-![Build Test](https://github.com/naijab/a-commerce/actions/workflows/build_test/badge.svg)
+[![Build Status](https://github.com/naijab/a-commerce/actions/workflows/build_test.yaml/badge.svg)](https://github.com/naijab/a-commerce/actions/workflows/build_test.yaml)
 
 > iOS App implementation in Clean Swift architecture
 
