@@ -20,13 +20,12 @@
 		AB0E710C266FE04B00117AE6 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E710B266FE04B00117AE6 /* ErrorView.swift */; };
 		AB0E710E266FE05300117AE6 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0E710D266FE05300117AE6 /* ErrorView.xib */; };
 		AB0E7111266FE29D00117AE6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E7110266FE29D00117AE6 /* UIViewExtension.swift */; };
+		AB0E711F266FFAAB00117AE6 /* ProductListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E711E266FFAAB00117AE6 /* ProductListInteractorTests.swift */; };
 		AB5284ED266D1B46005BA72A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5284EC266D1B46005BA72A /* AppDelegate.swift */; };
 		AB5284EF266D1B46005BA72A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5284EE266D1B46005BA72A /* SceneDelegate.swift */; };
 		AB5284F7266D1B46005BA72A /* A_Commerce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB5284F5266D1B46005BA72A /* A_Commerce.xcdatamodeld */; };
 		AB5284F9266D1B47005BA72A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5284F8266D1B47005BA72A /* Assets.xcassets */; };
 		AB5284FC266D1B47005BA72A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5284FA266D1B47005BA72A /* LaunchScreen.storyboard */; };
-		AB528507266D1B47005BA72A /* A_CommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB528506266D1B47005BA72A /* A_CommerceTests.swift */; };
-		AB528512266D1B47005BA72A /* A_CommerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB528511266D1B47005BA72A /* A_CommerceUITests.swift */; };
 		AB528524266D1D6A005BA72A /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB528522266D1D6A005BA72A /* ProductListViewController.swift */; };
 		AB528525266D1D6A005BA72A /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB528523266D1D6A005BA72A /* ProductListViewController.xib */; };
 		AB528527266D2022005BA72A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB528526266D2022005BA72A /* Main.storyboard */; };
@@ -73,6 +72,7 @@
 		AB0E710B266FE04B00117AE6 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		AB0E710D266FE05300117AE6 /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
 		AB0E7110266FE29D00117AE6 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		AB0E711E266FFAAB00117AE6 /* ProductListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductListInteractorTests.swift; path = "A-CommerceTests/Features/ProductList/ProductListInteractorTests.swift"; sourceTree = SOURCE_ROOT; };
 		AB5284E9266D1B46005BA72A /* A-Commerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A-Commerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5284EC266D1B46005BA72A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB5284EE266D1B46005BA72A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,10 +81,8 @@
 		AB5284FB266D1B47005BA72A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB5284FD266D1B47005BA72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB528502266D1B47005BA72A /* A-CommerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "A-CommerceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB528506266D1B47005BA72A /* A_CommerceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A_CommerceTests.swift; sourceTree = "<group>"; };
 		AB528508266D1B47005BA72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB52850D266D1B47005BA72A /* A-CommerceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "A-CommerceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB528511266D1B47005BA72A /* A_CommerceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A_CommerceUITests.swift; sourceTree = "<group>"; };
 		AB528513266D1B47005BA72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB528522266D1D6A005BA72A /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		AB528523266D1D6A005BA72A /* ProductListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
@@ -180,6 +178,22 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		AB0E711C266FFA7400117AE6 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				AB0E711D266FFA8500117AE6 /* ProductList */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		AB0E711D266FFA8500117AE6 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				AB0E711E266FFAAB00117AE6 /* ProductListInteractorTests.swift */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
 		AB5284E0266D1B46005BA72A = {
 			isa = PBXGroup;
 			children = (
@@ -223,7 +237,7 @@
 		AB528505266D1B47005BA72A /* A-CommerceTests */ = {
 			isa = PBXGroup;
 			children = (
-				AB528506266D1B47005BA72A /* A_CommerceTests.swift */,
+				AB0E711C266FFA7400117AE6 /* features */,
 				AB528508266D1B47005BA72A /* Info.plist */,
 			);
 			path = "A-CommerceTests";
@@ -232,7 +246,6 @@
 		AB528510266D1B47005BA72A /* A-CommerceUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AB528511266D1B47005BA72A /* A_CommerceUITests.swift */,
 				AB528513266D1B47005BA72A /* Info.plist */,
 			);
 			path = "A-CommerceUITests";
@@ -391,6 +404,7 @@
 					};
 					AB528501266D1B47005BA72A = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 						TestTargetID = AB5284E8266D1B46005BA72A;
 					};
 					AB52850C266D1B47005BA72A = {
@@ -584,7 +598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB528507266D1B47005BA72A /* A_CommerceTests.swift in Sources */,
+				AB0E711F266FFAAB00117AE6 /* ProductListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,7 +606,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB528512266D1B47005BA72A /* A_CommerceUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,6 +796,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "A-CommerceTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -793,6 +807,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.naijab.A-CommerceTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/A-Commerce.app/A-Commerce";
@@ -805,6 +820,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "A-CommerceTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
