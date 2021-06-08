@@ -4,6 +4,7 @@
 
 ## How to run
 - `pod install` for install dependencies
+- open **A-Commerce.xcworkspace** and run with iOS Simulator
 
 ## Architecture
 
