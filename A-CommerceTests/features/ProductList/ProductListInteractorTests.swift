@@ -77,7 +77,6 @@ final class ProductListInteractorTests: XCTestCase {
         XCTAssertTrue(presenter.hideLoadingCalled)
         XCTAssertTrue(presenter.showProductListFailureCalled)
     }
-    
 }
 
 private final class ProducListPresenterInputMock: IProductListPresenterInput {
