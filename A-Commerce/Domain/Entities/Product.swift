@@ -9,7 +9,7 @@ import Foundation
 import ObjectMapper
 
 class Product: Mappable {
-    var id: String?
+    var id: Int?
     var title: String?
     var image: String?
     var content: String?

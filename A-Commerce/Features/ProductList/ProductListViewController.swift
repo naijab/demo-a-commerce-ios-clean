@@ -90,11 +90,13 @@ extension ProductListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         var columns: CGFloat
         
+        // FXIME: Calculate collection view columns at 2 column when portrait
         let orientation = UIApplication.shared.windows.first?.windowScene?.interfaceOrientation
+        print("Orient: \(orientation == .portrait)")
         if orientation == .landscapeLeft || orientation == .landscapeRight {
             columns = 4
         } else {
-            columns = 2
+            columns = 3
         }
         
         let spacing: CGFloat = 5
@@ -117,6 +119,8 @@ extension ProductListViewController: UICollectionViewDelegateFlowLayout {
 
 extension ProductListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Select item at: \(products[indexPath.row].title)")
+        if let id = products[indexPath.row].id {
+            router?.showProductDetail(id: id)
+        }
     }
 }
