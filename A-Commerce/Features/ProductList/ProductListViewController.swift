@@ -8,6 +8,8 @@
 import UIKit
 
 protocol IProductListViewControllerInput: AnyObject {
+    func showLoading()
+    func hideLoading()
     func showProductListSuccess(products: [Product])
     func showProductListFailure(message: String)
 }
@@ -17,7 +19,8 @@ protocol IProductListViewControllerOutput: AnyObject {
 }
 
 final class ProductListViewController: UIViewController {
-   
+    @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
+    
     private var products: [Product] = []
     
     var interactor: IProductListInteractorInput?
@@ -50,15 +53,27 @@ final class ProductListViewController: UIViewController {
         productCollectionView.dataSource = self
         productCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
     }
+    
+    private func setLoadingIndicator() {
+        loadingIndicator.isHidden = true
+    }
 
 }
 
 extension ProductListViewController: IProductListViewControllerInput {
+    
+    func showLoading() {
+        loadingIndicator.isHidden = false
+        loadingIndicator.startAnimating()
+    }
+    
+    func hideLoading() {
+        loadingIndicator.isHidden = true
+        loadingIndicator.stopAnimating()
+    }
+    
     func showProductListSuccess(products: [Product]) {
         self.products = products
-        
-        print("Product: \(self.products)")
-        
         DispatchQueue.main.async {
             self.productCollectionView.reloadData()
         }
@@ -92,7 +107,6 @@ extension ProductListViewController: UICollectionViewDelegateFlowLayout {
         
         // FXIME: Calculate collection view columns at 2 column when portrait
         let orientation = UIApplication.shared.windows.first?.windowScene?.interfaceOrientation
-        print("Orient: \(orientation == .portrait)")
         if orientation == .landscapeLeft || orientation == .landscapeRight {
             columns = 4
         } else {

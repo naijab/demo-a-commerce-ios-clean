@@ -19,6 +19,13 @@ final class ProductListPresenter {
 }
 
 extension ProductListPresenter: IProductListPresenterInput {
+    func showLoading() {
+        viewController?.showLoading()
+    }
+    
+    func hideLoading() {
+        viewController?.hideLoading()
+    }
     
     func showProductListSuccess(products: [Product]) {
         viewController?.showProductListSuccess(products: products)

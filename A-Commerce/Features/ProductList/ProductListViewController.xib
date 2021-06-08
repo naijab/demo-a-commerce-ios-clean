@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductListViewController" customModule="A_Commerce" customModuleProvider="target">
             <connections>
+                <outlet property="loadingIndicator" destination="h1D-NY-hih" id="Yli-y4-HlI"/>
                 <outlet property="productCollectionView" destination="AvN-A2-Zez" id="X29-4b-ywb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -36,6 +37,9 @@
                     <color key="textColor" name="darkGray"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="h1D-NY-hih" userLabel="Loading">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -43,8 +47,10 @@
                 <constraint firstItem="AvN-A2-Zez" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FQ3-6r-EgY"/>
                 <constraint firstItem="AvN-A2-Zez" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="JuV-CS-x5i"/>
                 <constraint firstItem="AvN-A2-Zez" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XiZ-aZ-23g"/>
+                <constraint firstItem="h1D-NY-hih" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cG2-a4-VgF"/>
                 <constraint firstItem="t5X-8J-xgF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="d0g-NR-t9L"/>
                 <constraint firstItem="AvN-A2-Zez" firstAttribute="top" secondItem="t5X-8J-xgF" secondAttribute="bottom" constant="8" id="rfI-cJ-fEg"/>
+                <constraint firstItem="h1D-NY-hih" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="u31-2p-GhV"/>
                 <constraint firstItem="t5X-8J-xgF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="v4S-Ra-xy7"/>
             </constraints>
             <point key="canvasLocation" x="-133.33333333333334" y="152.67857142857142"/>
