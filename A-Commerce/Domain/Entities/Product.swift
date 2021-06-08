@@ -36,4 +36,20 @@ class Product: Mappable {
         
         return String(format: "%.2f", price)
     }
+    
+    init(
+        id: Int?,
+        title: String?,
+        image: String?,
+        content: String?,
+        isNewProduct: Bool?,
+        price: Float?
+    ) {
+        self.id = id
+        self.title = title
+        self.image = image
+        self.content = content
+        self.isNewProduct = isNewProduct
+        self.price = price
+    }
 }

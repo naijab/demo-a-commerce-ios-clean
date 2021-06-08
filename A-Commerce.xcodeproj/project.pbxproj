@@ -21,6 +21,9 @@
 		AB0E710E266FE05300117AE6 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0E710D266FE05300117AE6 /* ErrorView.xib */; };
 		AB0E7111266FE29D00117AE6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E7110266FE29D00117AE6 /* UIViewExtension.swift */; };
 		AB0E711F266FFAAB00117AE6 /* ProductListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E711E266FFAAB00117AE6 /* ProductListInteractorTests.swift */; };
+		AB0E7121266FFB7B00117AE6 /* A_CommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E7120266FFB7B00117AE6 /* A_CommerceTests.swift */; };
+		AB0E7123266FFB8600117AE6 /* A_CommerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E7122266FFB8600117AE6 /* A_CommerceUITests.swift */; };
+		AB0E7126266FFF9000117AE6 /* ProductWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E7125266FFF9000117AE6 /* ProductWorkerMock.swift */; };
 		AB5284ED266D1B46005BA72A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5284EC266D1B46005BA72A /* AppDelegate.swift */; };
 		AB5284EF266D1B46005BA72A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5284EE266D1B46005BA72A /* SceneDelegate.swift */; };
 		AB5284F7266D1B46005BA72A /* A_Commerce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB5284F5266D1B46005BA72A /* A_Commerce.xcdatamodeld */; };
@@ -73,6 +76,9 @@
 		AB0E710D266FE05300117AE6 /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
 		AB0E7110266FE29D00117AE6 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		AB0E711E266FFAAB00117AE6 /* ProductListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductListInteractorTests.swift; path = "A-CommerceTests/Features/ProductList/ProductListInteractorTests.swift"; sourceTree = SOURCE_ROOT; };
+		AB0E7120266FFB7B00117AE6 /* A_CommerceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A_CommerceTests.swift; sourceTree = "<group>"; };
+		AB0E7122266FFB8600117AE6 /* A_CommerceUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A_CommerceUITests.swift; sourceTree = "<group>"; };
+		AB0E7125266FFF9000117AE6 /* ProductWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductWorkerMock.swift; sourceTree = "<group>"; };
 		AB5284E9266D1B46005BA72A /* A-Commerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A-Commerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5284EC266D1B46005BA72A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB5284EE266D1B46005BA72A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +200,14 @@
 			path = ProductList;
 			sourceTree = "<group>";
 		};
+		AB0E7124266FFF8200117AE6 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				AB0E7125266FFF9000117AE6 /* ProductWorkerMock.swift */,
+			);
+			path = mock;
+			sourceTree = "<group>";
+		};
 		AB5284E0266D1B46005BA72A = {
 			isa = PBXGroup;
 			children = (
@@ -237,7 +251,9 @@
 		AB528505266D1B47005BA72A /* A-CommerceTests */ = {
 			isa = PBXGroup;
 			children = (
+				AB0E7124266FFF8200117AE6 /* mock */,
 				AB0E711C266FFA7400117AE6 /* features */,
+				AB0E7120266FFB7B00117AE6 /* A_CommerceTests.swift */,
 				AB528508266D1B47005BA72A /* Info.plist */,
 			);
 			path = "A-CommerceTests";
@@ -246,6 +262,7 @@
 		AB528510266D1B47005BA72A /* A-CommerceUITests */ = {
 			isa = PBXGroup;
 			children = (
+				AB0E7122266FFB8600117AE6 /* A_CommerceUITests.swift */,
 				AB528513266D1B47005BA72A /* Info.plist */,
 			);
 			path = "A-CommerceUITests";
@@ -409,6 +426,7 @@
 					};
 					AB52850C266D1B47005BA72A = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 						TestTargetID = AB5284E8266D1B46005BA72A;
 					};
 				};
@@ -598,6 +616,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0E7126266FFF9000117AE6 /* ProductWorkerMock.swift in Sources */,
+				AB0E7121266FFB7B00117AE6 /* A_CommerceTests.swift in Sources */,
 				AB0E711F266FFAAB00117AE6 /* ProductListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +626,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0E7123266FFB8600117AE6 /* A_CommerceUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,6 +863,7 @@
 			baseConfigurationReference = 42B4A856D5145AA729F43410 /* Pods-A-Commerce-A-CommerceUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "A-CommerceUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -851,6 +873,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.naijab.A-CommerceUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "A-Commerce";
@@ -862,6 +885,7 @@
 			baseConfigurationReference = C54D35D9C50F62117F87FA06 /* Pods-A-Commerce-A-CommerceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "A-CommerceUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
