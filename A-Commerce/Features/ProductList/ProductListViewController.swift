@@ -74,7 +74,6 @@ final class ProductListViewController: UIViewController {
 }
 
 extension ProductListViewController: IProductListViewControllerInput {
-    
     func showLoading() {
         loadingIndicator.isHidden = false
         loadingIndicator.startAnimating()
@@ -87,13 +86,14 @@ extension ProductListViewController: IProductListViewControllerInput {
     
     func showProductListSuccess(products: [Product]) {
         self.products = products
-        DispatchQueue.main.async {
-            self.productCollectionView.reloadData()
-        }
+        productCollectionView.reloadData()
+        errorView.isHidden = true
     }
     
     func showProductListFailure(message: String) {
-        errorLabel?.text = message
+        print("Error: \(message)")
+        errorView.isHidden = false
+        errorLabel.text = message
     }
 }
 

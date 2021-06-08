@@ -44,23 +44,22 @@
                     <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                 </activityIndicatorView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X3j-D3-Ht3" userLabel="Error View">
-                    <rect key="frame" x="107" y="388" width="200" height="120"/>
+                    <rect key="frame" x="24" y="388" width="366" height="120"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bIz-1n-daW">
-                            <rect key="frame" x="55" y="0.0" width="90" height="120"/>
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="120"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26x-JW-9Ny">
-                                    <rect key="frame" x="0.0" y="0.0" width="90" height="74"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="366" height="74"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" name="red"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eju-yG-fhg">
-                                    <rect key="frame" x="0.0" y="90" width="90" height="30"/>
+                                    <rect key="frame" x="0.0" y="90" width="366" height="30"/>
                                     <color key="backgroundColor" systemColor="labelColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="Tx7-hB-mTl"/>
-                                        <constraint firstAttribute="width" constant="90" id="u6y-9f-FZf"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <state key="normal" title="Try Again">
@@ -75,10 +74,11 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="bIz-1n-daW" secondAttribute="trailing" id="6wm-Zv-kqy"/>
                         <constraint firstItem="bIz-1n-daW" firstAttribute="top" secondItem="X3j-D3-Ht3" secondAttribute="top" id="OGJ-BO-MUR"/>
                         <constraint firstAttribute="bottom" secondItem="bIz-1n-daW" secondAttribute="bottom" id="U9q-8n-ghX"/>
                         <constraint firstAttribute="height" constant="120" id="VCF-pC-PDj"/>
-                        <constraint firstAttribute="width" constant="200" id="f4X-Sw-R6d"/>
+                        <constraint firstItem="bIz-1n-daW" firstAttribute="leading" secondItem="X3j-D3-Ht3" secondAttribute="leading" id="ZcU-mK-7Oe"/>
                         <constraint firstItem="bIz-1n-daW" firstAttribute="centerX" secondItem="X3j-D3-Ht3" secondAttribute="centerX" id="vgQ-VB-Lfx"/>
                     </constraints>
                 </view>
@@ -86,10 +86,11 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X3j-D3-Ht3" secondAttribute="trailing" constant="24" id="0xw-it-BIr"/>
                 <constraint firstItem="X3j-D3-Ht3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="2rG-Ug-34n"/>
+                <constraint firstItem="X3j-D3-Ht3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Eyy-CP-vXT"/>
                 <constraint firstItem="AvN-A2-Zez" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FQ3-6r-EgY"/>
                 <constraint firstItem="AvN-A2-Zez" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="JuV-CS-x5i"/>
-                <constraint firstItem="X3j-D3-Ht3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SDO-Tb-7oZ"/>
                 <constraint firstItem="AvN-A2-Zez" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XiZ-aZ-23g"/>
                 <constraint firstItem="h1D-NY-hih" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cG2-a4-VgF"/>
                 <constraint firstItem="t5X-8J-xgF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="d0g-NR-t9L"/>
