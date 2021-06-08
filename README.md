@@ -1,10 +1,11 @@
 # A-Commerce
+![Build Test](https://github.com/naijab/a-commerce/actions/workflows/build_test/badge.svg)
 
 > iOS App implementation in Clean Swift architecture
 
 ## Requirement
-- iOS 14.2 SDK
-- Xcode 12.2
+- iOS 13.0 in minimum
+- Xcode 12.2 in minimum
 - **cocoapods** install with `sudo gem install cocoapods`
 - **make** install with `brew install make`
 - **xcpretty** install with `sudo gem install xcpretty`
