@@ -35,10 +35,10 @@ final class ProductDetailConfigurator: IProductDetailConfigurator {
         )
     
         vc.interactor = interactor
-       
+        vc.id = input.id
+        
         interactor.getProductDetail(id: input.id)
         
         return vc
     }
-
 }

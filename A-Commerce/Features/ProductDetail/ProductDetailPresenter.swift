@@ -19,7 +19,14 @@ final class ProductDetailPresenter {
 }
 
 extension ProductDetailPresenter: IProductDetailPresenterInput {
+    func showLoading() {
+        viewController?.showLoading()
+    }
     
+    func hideLoading() {
+        viewController?.hideLoading()
+    }
+
     func showProductDetailSuccess(product: Product) {
         viewController?.showProductDetailSuccess(product: product)
     }
@@ -27,5 +34,4 @@ extension ProductDetailPresenter: IProductDetailPresenterInput {
     func showProductDetailFailure(message: String) {
         viewController?.showProductDetailFailure(message: message)
     }
-    
 }

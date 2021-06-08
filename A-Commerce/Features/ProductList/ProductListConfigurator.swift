@@ -12,7 +12,6 @@ protocol IProductListConfigurator {
 }
 
 final class ProductListConfigurator: IProductListConfigurator {
-    
     @discardableResult
     func configured(_ vc: ProductListViewController) -> ProductListViewController {
         let remoteWorker = ProductRemoteWorker()
@@ -32,5 +31,4 @@ final class ProductListConfigurator: IProductListConfigurator {
        
         return vc
     }
-
 }

@@ -20,11 +20,9 @@ final class ProductListRouter {
 }
 
 extension ProductListRouter: IProductListRoutingLogic {
-    
     func showProductDetail(id: Int) {
         let productDetailConfigurator = ProductDetailConfigurator(input: ProductDetailConfiguratorInput(id: id))
         let viewController = productDetailConfigurator.configured(ProductDetailViewController())
         source?.navigationController?.pushViewController(viewController, animated: true)
     }
-    
 }

@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductDetailViewController" customModule="A_Commerce" customModuleProvider="target">
             <connections>
+                <outlet property="errorView" destination="iXL-8h-Oym" id="V0V-ze-onN"/>
+                <outlet property="loadingIndicator" destination="XO8-dD-b4i" id="6qq-Cy-rdY"/>
                 <outlet property="productDetail" destination="JdD-fZ-9jR" id="Sx4-oB-TES"/>
                 <outlet property="productImage" destination="Rrt-P4-OEL" id="Dv1-W0-epU"/>
                 <outlet property="productNew" destination="npk-AS-Z6r" id="5cp-Pd-jgA"/>
@@ -76,14 +78,29 @@
                     <viewLayoutGuide key="contentLayoutGuide" id="gAK-GS-ccu"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="lZq-Gj-LRM"/>
                 </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXL-8h-Oym" customClass="ErrorView" customModule="A_Commerce" customModuleProvider="target">
+                    <rect key="frame" x="24" y="380" width="366" height="136"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="136" id="Icq-so-fZq"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="XO8-dD-b4i" userLabel="Loading">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Swo-kJ-Dg9" secondAttribute="trailing" id="1No-P7-1NZ"/>
+                <constraint firstItem="iXL-8h-Oym" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="3lx-rz-ogT"/>
                 <constraint firstItem="Swo-kJ-Dg9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5RA-iq-64V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iXL-8h-Oym" secondAttribute="trailing" constant="24" id="8Hx-iB-btf"/>
                 <constraint firstItem="Swo-kJ-Dg9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OKf-Uz-ioG"/>
+                <constraint firstItem="XO8-dD-b4i" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gZa-dj-264"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Swo-kJ-Dg9" secondAttribute="bottom" id="hr0-aT-WWR"/>
+                <constraint firstItem="XO8-dD-b4i" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lxa-WK-X5q"/>
+                <constraint firstItem="iXL-8h-Oym" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="uxr-0b-fgq"/>
             </constraints>
             <point key="canvasLocation" x="94" y="125"/>
         </view>

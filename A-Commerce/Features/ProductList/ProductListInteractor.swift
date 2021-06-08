@@ -30,7 +30,6 @@ final class ProductListInteractor {
 }
 
 extension ProductListInteractor: IProductListInteractorInput {
-    
     func getProductList() {
         presenter?.showLoading()
         productWorker?.getProductList { [self] result in
@@ -44,6 +43,5 @@ extension ProductListInteractor: IProductListInteractorInput {
             }
         }
     }
-    
 }
 

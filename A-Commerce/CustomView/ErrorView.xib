@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorView" customModule="A_Commerce" customModuleProvider="target">
+            <connections>
+                <outlet property="errorLabel" destination="ALW-Tb-83D" id="UII-fc-uCe"/>
+                <outlet property="tryAgainButton" destination="qP3-oc-sgl" id="q0l-67-eqw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="621" height="246"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cn-bn-1Ou" userLabel="content view">
+                    <rect key="frame" x="16" y="60" width="589" height="136"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qP3-oc-sgl">
+                            <rect key="frame" x="24" y="84" width="541" height="36"/>
+                            <color key="backgroundColor" name="darkGray"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="Yod-Vz-Fc3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="Try Again">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="didTryAgainTap:" destination="-1" eventType="touchUpInside" id="XGm-8a-v51"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="DZA-SD-ZQN">
+                            <rect key="frame" x="16" y="16" width="557" height="52"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something Wrong" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALW-Tb-83D">
+                                    <rect key="frame" x="0.0" y="0.0" width="557" height="52"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" name="red"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="qP3-oc-sgl" firstAttribute="top" secondItem="DZA-SD-ZQN" secondAttribute="bottom" constant="16" id="0nl-85-wUj"/>
+                        <constraint firstAttribute="trailing" secondItem="DZA-SD-ZQN" secondAttribute="trailing" constant="16" id="83Z-FA-ysG"/>
+                        <constraint firstAttribute="trailing" secondItem="qP3-oc-sgl" secondAttribute="trailing" constant="24" id="K5r-4t-KT5"/>
+                        <constraint firstItem="DZA-SD-ZQN" firstAttribute="leading" secondItem="3cn-bn-1Ou" secondAttribute="leading" constant="16" id="dPH-52-y7N"/>
+                        <constraint firstItem="DZA-SD-ZQN" firstAttribute="top" secondItem="3cn-bn-1Ou" secondAttribute="top" constant="16" id="uW4-tH-Ftc"/>
+                        <constraint firstAttribute="bottom" secondItem="qP3-oc-sgl" secondAttribute="bottom" constant="16" id="xKx-dx-zhO"/>
+                        <constraint firstItem="qP3-oc-sgl" firstAttribute="leading" secondItem="3cn-bn-1Ou" secondAttribute="leading" constant="24" id="zki-Tx-aia"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3cn-bn-1Ou" secondAttribute="bottom" constant="16" id="E5A-pk-GB1"/>
+                <constraint firstItem="3cn-bn-1Ou" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="ILo-Bj-Yiv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3cn-bn-1Ou" secondAttribute="trailing" constant="16" id="l0j-CB-80v"/>
+                <constraint firstItem="3cn-bn-1Ou" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="yHG-w1-kl5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="247.10144927536234" y="247.09821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="darkGray">
+            <color red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="red">
+            <color red="0.8901960784313725" green="0.035294117647058823" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

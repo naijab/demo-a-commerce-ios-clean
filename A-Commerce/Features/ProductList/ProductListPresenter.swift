@@ -34,5 +34,4 @@ extension ProductListPresenter: IProductListPresenterInput {
     func showProductListFailure(message: String) {
         viewController?.showProductListFailure(message: message)
     }
-    
 }

@@ -9,6 +9,8 @@ import UIKit
 import Kingfisher
 
 protocol IProductDetailViewControllerInput: AnyObject {
+    func showLoading()
+    func hideLoading()
     func showProductDetailSuccess(product: Product)
     func showProductDetailFailure(message: String)
 }
@@ -18,13 +20,15 @@ protocol IProductDetailViewControllerOutput: AnyObject {
 }
 
 final class ProductDetailViewController: UIViewController {
-    
+    @IBOutlet private weak var errorView: ErrorView!
     @IBOutlet private weak var productNew: UILabel!
     @IBOutlet private weak var productImage: UIImageView!
     @IBOutlet private weak var productTitle: UILabel!
     @IBOutlet private weak var productPrice: UILabel!
     @IBOutlet private weak var productDetail: UILabel!
+    @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
     
+    var id: Int?
     var interactor: IProductDetailInteractorInput?
     
     override func viewDidLoad() {
@@ -45,26 +49,58 @@ final class ProductDetailViewController: UIViewController {
     }
     
     private func setView() {
-        productNew?.isHidden = true
+        setShowProductDetail(false)
+        errorView.isHidden = true
+        loadingIndicator?.isHidden = true
     }
-
 }
 
 extension ProductDetailViewController: IProductDetailViewControllerInput {
+    func showLoading() {
+        loadingIndicator?.isHidden = false
+        loadingIndicator?.startAnimating()
+    }
+    
+    func hideLoading() {
+        loadingIndicator?.isHidden = true
+        loadingIndicator?.stopAnimating()
+    }
     
     func showProductDetailSuccess(product: Product) {
-        self.productTitle?.text = product.title ?? ""
-        self.productPrice?.text = product.displayPrice ?? "0"
-        self.productImage?.kf.setImage(
+        productTitle.text = product.title ?? ""
+        productPrice.text = product.displayPrice ?? "0"
+        productImage.kf.setImage(
             with: URL(string: product.image ?? ""),
             placeholder: UIImage(named: "empty_photos")
         )
-        self.productDetail?.text = product.content ?? ""
-        self.productNew?.isHidden = !(product.isNewProduct ?? false)
+        productDetail.text = product.content ?? ""
+        productNew.isHidden = !(product.isNewProduct ?? false)
+        
+        setShowProductDetail(true)
+        
+        errorView.isHidden = true
     }
     
     func showProductDetailFailure(message: String) {
-        print("product detail error: \(message)")
+        setShowProductDetail(false)
+        
+        errorView.isHidden = false
+        errorView.bindData(with: message)
     }
     
+    private func setShowProductDetail(_ isShow: Bool) {
+        productTitle.isHidden = !isShow
+        productPrice.isHidden = !isShow
+        productImage.isHidden = !isShow
+        productNew.isHidden = !isShow
+        productDetail.isHidden = !isShow
+    }
+}
+
+extension ProductDetailViewController: ErrorViewDelegate {
+    func didTryAgainTap(_ view: ErrorView) {
+        if let id = id {
+            interactor?.getProductDetail(id: id)
+        }
+    }
 }
