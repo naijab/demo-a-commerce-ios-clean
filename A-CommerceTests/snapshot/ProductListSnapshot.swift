@@ -11,6 +11,8 @@ import FBSnapshotTestCase
 final class ProductListSnapshot: FBSnapshotTestCase {
     override func setUp() {
         super.setUp()
+        // true for create or update ref image of view
+        // false for run test again
         recordMode = false
     }
     
