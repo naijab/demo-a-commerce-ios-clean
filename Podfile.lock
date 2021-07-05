@@ -1,5 +1,10 @@
 PODS:
   - Alamofire (5.4.3)
+  - iOSSnapshotTestCase (6.2.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.2.0)
+  - iOSSnapshotTestCase/Core (6.2.0)
+  - iOSSnapshotTestCase/SwiftSupport (6.2.0):
+    - iOSSnapshotTestCase/Core
   - Kingfisher (6.3.0)
   - Nimble (9.2.0)
   - ObjectMapper (4.2.0)
@@ -7,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - iOSSnapshotTestCase
   - Kingfisher (~> 6.3)
   - Nimble
   - ObjectMapper (~> 4.2)
@@ -15,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - iOSSnapshotTestCase
     - Kingfisher
     - Nimble
     - ObjectMapper
@@ -22,11 +29,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
 
-PODFILE CHECKSUM: f6983e553716b991214800feb7245649f4dd1fae
+PODFILE CHECKSUM: 86b5dbf23eea70c8b8eef39b2efbe730420c2351
 
 COCOAPODS: 1.10.1

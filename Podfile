@@ -11,6 +11,7 @@ target 'A-Commerce' do
   pod 'ObjectMapper', '~> 4.2'
   pod 'Quick'
   pod 'Nimble'
+  pod 'iOSSnapshotTestCase'
 
   target 'A-CommerceTests' do
     inherit! :search_paths
