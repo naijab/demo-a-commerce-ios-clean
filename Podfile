@@ -9,6 +9,8 @@ target 'A-Commerce' do
   pod 'Alamofire', '~> 5.2'
   pod 'Kingfisher', '~> 6.3'
   pod 'ObjectMapper', '~> 4.2'
+  pod 'Quick'
+  pod 'Nimble'
 
   target 'A-CommerceTests' do
     inherit! :search_paths
