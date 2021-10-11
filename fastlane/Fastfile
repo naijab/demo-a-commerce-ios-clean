@@ -20,8 +20,7 @@ platform :ios do
       proj: "./A-Commerce.xcodeproj",
       scheme: "A-Commerce",
     
-      github: true,
-      sonarqube_xml: true, 
+      llvm_cov: true, 
       html: true,
       
       build_directory: "./DerivedData",
