@@ -24,7 +24,5 @@ platform :ios do
       output_file: "./sonar-reports/swiftlint.txt", 
       ignore_exit_status: true
     )
-
-    sonar
   end
 end
