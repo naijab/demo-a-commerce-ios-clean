@@ -1,5 +1,5 @@
 # A-Commerce
-[![Build Status](https://github.com/naijab/a-commerce/actions/workflows/build_test.yaml/badge.svg)](https://github.com/naijab/a-commerce/actions/workflows/build_test.yaml) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=naijab_a-commerce&metric=alert_status)](https://sonarcloud.io/dashboard?id=naijab_a-commerce)
+[![Build Status](https://github.com/naijab/a-commerce/actions/workflows/build_test.yaml/badge.svg)](https://github.com/naijab/a-commerce/actions/workflows/build_test.yaml) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=naijab_a-commerce&metric=alert_status)](https://sonarcloud.io/dashboard?id=naijab_a-commerce) [![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=naijab_a-commerce&metric=coverage)](https://sonarcloud.io/component_measures/metric/coverage/list?id=naijab_a-commerce)
 
 > iOS App implementation in Clean Swift architecture
 
