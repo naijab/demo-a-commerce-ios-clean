@@ -182,6 +182,13 @@ GEM
     rouge (2.0.7)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
+    scan (1.0.0)
+      colored
+      fastlane (>= 2.0.0, < 3.0.0)
+      slack-notifier (~> 1.3)
+      terminal-table (>= 1.4.5, < 2.0.0)
+      xcpretty (>= 0.2.4, < 1.0.0)
+      xcpretty-travis-formatter (>= 0.0.3)
     security (0.1.3)
     signet (0.16.0)
       addressable (~> 2.8)
@@ -191,6 +198,7 @@ GEM
     simctl (1.6.8)
       CFPropertyList
       naturally
+    slack-notifier (1.5.1)
     slather (2.7.2)
       CFPropertyList (>= 2.2, < 4)
       activesupport
@@ -232,6 +240,7 @@ PLATFORMS
 
 DEPENDENCIES
   fastlane
+  scan
   slather
 
 BUNDLED WITH

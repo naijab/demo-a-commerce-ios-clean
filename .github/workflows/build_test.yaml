@@ -45,6 +45,9 @@ jobs:
           path: ./*
           key: ${{ github.sha }}
 
+      - name: List reports
+        run: ls sonar-reports
+
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
         env:

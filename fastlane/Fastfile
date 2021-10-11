@@ -3,23 +3,38 @@ default_platform(:ios)
 platform :ios do
   desc "Run unit test and swiftlint"
   lane :metrics do
+    derived_data_path = "./DerivedData"
+
     scan(
+      workspace: "./A-Commerce.xcworkspace",
       scheme: "A-Commerce", 
+      devices: "iPhone 11",
       clean: true,
-      code_coverage: true, 
-      derived_data_path: "./DerivedData", 
-      output_directory: "./sonar-reports",
-      devices: "iPhone 11"
+      build_for_testing: true,
+      derived_data_path: derived_data_path
+    )
+    
+    scan(
+      workspace: "./A-Commerce.xcworkspace",
+      scheme: "A-Commerce", 
+      devices: "iPhone 11",
+      code_coverage: true,
+      test_without_building: true,
+      derived_data_path: derived_data_path
     )
 
     slather(
+      workspace: './A-Commerce.xcworkspace',
+      proj: "./A-Commerce.xcodeproj",
+      scheme: "A-Commerce",
+    
       cobertura_xml: true,
       sonarqube_xml: true, 
-      scheme: "A-Commerce", 
-      build_directory: "./DerivedData", 
+      html: true,
+      
+      build_directory: derived_data_path, 
       output_directory: "./sonar-reports", 
-      proj: "./A-Commerce.xcodeproj",
-      workspace: "./A-Commerce.xcworkspace",
+      
       ignore: ["Pods/*", "ThirdParty/*", "Frameworks/*"]
     )
 
