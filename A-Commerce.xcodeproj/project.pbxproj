@@ -10,7 +10,6 @@
 		2F1BD24263167F2AE059EDCE /* Pods_A_Commerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DBA8F5D53CCAF488C0BBCE /* Pods_A_Commerce.framework */; };
 		50B25D1F7321E94EBE6A0DB6 /* Pods_A_Commerce_A_CommerceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70E2CBC4CCF6E3900947C12 /* Pods_A_Commerce_A_CommerceUITests.framework */; };
 		7DBF8A662692C45A003D16B0 /* ProductListInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBF8A652692C45A003D16B0 /* ProductListInteractorSpec.swift */; };
-		7DBF8A7E2692D03A003D16B0 /* ProductListSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBF8A7D2692D03A003D16B0 /* ProductListSnapshot.swift */; };
 		A051CDCD330553128A02A9E4 /* Pods_A_CommerceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9540BC40B6A17D737E8299BF /* Pods_A_CommerceTests.framework */; };
 		AB0E70FE266FBAFD00117AE6 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E70FC266FBAFD00117AE6 /* ProductCollectionViewCell.swift */; };
 		AB0E70FF266FBAFD00117AE6 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0E70FD266FBAFD00117AE6 /* ProductCollectionViewCell.xib */; };
@@ -24,7 +23,6 @@
 		AB0E7111266FE29D00117AE6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E7110266FE29D00117AE6 /* UIViewExtension.swift */; };
 		AB0E711F266FFAAB00117AE6 /* ProductListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E711E266FFAAB00117AE6 /* ProductListInteractorTests.swift */; };
 		AB0E7121266FFB7B00117AE6 /* A_CommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E7120266FFB7B00117AE6 /* A_CommerceTests.swift */; };
-		AB0E7123266FFB8600117AE6 /* A_CommerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E7122266FFB8600117AE6 /* A_CommerceUITests.swift */; };
 		AB0E7126266FFF9000117AE6 /* ProductWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E7125266FFF9000117AE6 /* ProductWorkerMock.swift */; };
 		AB0E71282670031600117AE6 /* ProductListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E71272670031600117AE6 /* ProductListPresenterTests.swift */; };
 		AB5284ED266D1B46005BA72A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5284EC266D1B46005BA72A /* AppDelegate.swift */; };
@@ -66,7 +64,6 @@
 		02CF205E93E1A7FA484BBBF8 /* Pods-A-CommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A-CommerceTests.debug.xcconfig"; path = "Target Support Files/Pods-A-CommerceTests/Pods-A-CommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		42B4A856D5145AA729F43410 /* Pods-A-Commerce-A-CommerceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A-Commerce-A-CommerceUITests.debug.xcconfig"; path = "Target Support Files/Pods-A-Commerce-A-CommerceUITests/Pods-A-Commerce-A-CommerceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DBF8A652692C45A003D16B0 /* ProductListInteractorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListInteractorSpec.swift; sourceTree = "<group>"; };
-		7DBF8A7D2692D03A003D16B0 /* ProductListSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListSnapshot.swift; sourceTree = "<group>"; };
 		8844C4B8F7623E65F69CC4B4 /* Pods-A-CommerceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A-CommerceTests.release.xcconfig"; path = "Target Support Files/Pods-A-CommerceTests/Pods-A-CommerceTests.release.xcconfig"; sourceTree = "<group>"; };
 		9540BC40B6A17D737E8299BF /* Pods_A_CommerceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A_CommerceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DBA8F5D53CCAF488C0BBCE /* Pods_A_Commerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A_Commerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +79,6 @@
 		AB0E7110266FE29D00117AE6 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		AB0E711E266FFAAB00117AE6 /* ProductListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductListInteractorTests.swift; path = "A-CommerceTests/Features/ProductList/ProductListInteractorTests.swift"; sourceTree = SOURCE_ROOT; };
 		AB0E7120266FFB7B00117AE6 /* A_CommerceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A_CommerceTests.swift; sourceTree = "<group>"; };
-		AB0E7122266FFB8600117AE6 /* A_CommerceUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A_CommerceUITests.swift; sourceTree = "<group>"; };
 		AB0E7125266FFF9000117AE6 /* ProductWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductWorkerMock.swift; sourceTree = "<group>"; };
 		AB0E71272670031600117AE6 /* ProductListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenterTests.swift; sourceTree = "<group>"; };
 		AB5284E9266D1B46005BA72A /* A-Commerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A-Commerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,14 +166,6 @@
 				7DBF8A652692C45A003D16B0 /* ProductListInteractorSpec.swift */,
 			);
 			path = spec;
-			sourceTree = "<group>";
-		};
-		7DBF8A7C2692D02C003D16B0 /* snapshot */ = {
-			isa = PBXGroup;
-			children = (
-				7DBF8A7D2692D03A003D16B0 /* ProductListSnapshot.swift */,
-			);
-			path = snapshot;
 			sourceTree = "<group>";
 		};
 		AB0E70FB266FBAE500117AE6 /* cell */ = {
@@ -274,7 +262,6 @@
 		AB528505266D1B47005BA72A /* A-CommerceTests */ = {
 			isa = PBXGroup;
 			children = (
-				7DBF8A7C2692D02C003D16B0 /* snapshot */,
 				7DBF8A642692C44C003D16B0 /* spec */,
 				AB0E7124266FFF8200117AE6 /* mock */,
 				AB0E711C266FFA7400117AE6 /* features */,
@@ -287,7 +274,6 @@
 		AB528510266D1B47005BA72A /* A-CommerceUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AB0E7122266FFB8600117AE6 /* A_CommerceUITests.swift */,
 				AB528513266D1B47005BA72A /* Info.plist */,
 			);
 			path = "A-CommerceUITests";
@@ -645,7 +631,6 @@
 				AB0E7121266FFB7B00117AE6 /* A_CommerceTests.swift in Sources */,
 				AB0E71282670031600117AE6 /* ProductListPresenterTests.swift in Sources */,
 				AB0E711F266FFAAB00117AE6 /* ProductListInteractorTests.swift in Sources */,
-				7DBF8A7E2692D03A003D16B0 /* ProductListSnapshot.swift in Sources */,
 				7DBF8A662692C45A003D16B0 /* ProductListInteractorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,7 +639,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB0E7123266FFB8600117AE6 /* A_CommerceUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,6 +833,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF9GA8G3KV;
 				INFOPLIST_FILE = "A-CommerceTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -873,6 +858,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF9GA8G3KV;
 				INFOPLIST_FILE = "A-CommerceTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -895,6 +881,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "A-CommerceUITests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -918,6 +905,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "A-CommerceUITests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
