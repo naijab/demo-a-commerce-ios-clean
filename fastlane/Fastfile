@@ -1,23 +1,29 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Description of what the lane does"
+  desc "Run unit test and swiftlint"
   lane :metrics do
-    scan(scheme: "A-Commerce", 
+    scan(
+      scheme: "A-Commerce", 
       code_coverage: true, 
       derived_data_path: "./DerivedData", 
       output_directory: "./sonar-reports",
-      devices: "iPhone 11")
+      devices: "iPhone 11"
+    )
 
-    slather(cobertura_xml: true, 
+    slather(
+      cobertura_xml: true, 
       jenkins: true, 
       scheme: "A-Commerce", 
       build_directory: "./DerivedData", 
       output_directory: "./sonar-reports", 
-      proj: "./A-Commerce.xcodeproj")
+      proj: "./A-Commerce.xcodeproj"
+    )
 
-    swiftlint(output_file: "./sonar-reports/swiftlint.txt", 
-      ignore_exit_status: true)
+    swiftlint(
+      output_file: "./sonar-reports/swiftlint.txt", 
+      ignore_exit_status: true
+    )
 
     sonar
   end
