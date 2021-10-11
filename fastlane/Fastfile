@@ -12,12 +12,13 @@ platform :ios do
     )
 
     slather(
-      cobertura_xml: true, 
-      jenkins: true, 
+      cobertura_xml: true,
+      sonarqube_xml: true, 
       scheme: "A-Commerce", 
       build_directory: "./DerivedData", 
       output_directory: "./sonar-reports", 
       proj: "./A-Commerce.xcodeproj"
+      workspace: "./A-Commerce.xcworkspace"
     )
 
     swiftlint(
