@@ -17,12 +17,6 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '2.7'
-
-    - name: Install xcpretty
-      run: sudo gem install xcpretty
-      
-    - name: Run unit test
-      run: make test
     
     - name: Run fastlane
       uses: maierj/fastlane-action@v2.0.1
