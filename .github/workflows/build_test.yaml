@@ -17,12 +17,6 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '2.7'
-
-    - name: Set up Homebrew
-      uses: Homebrew/actions/setup-homebrew@master
-
-    - name: Install swiftlint
-      run: brew install swiftlint
     
     - name: Run fastlane
       uses: maierj/fastlane-action@v2.0.1
