@@ -21,8 +21,9 @@ platform :ios do
       proj: "./A-Commerce.xcodeproj",
       scheme: "A-Commerce",
     
-      llvm_cov: true, 
-      html: true,
+      sonarqube_xml: true, 
+      html: false,
+      github: true,
       
       build_directory: "./DerivedData",
       output_directory: "./sonar-reports", 
