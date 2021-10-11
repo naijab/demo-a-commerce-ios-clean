@@ -22,7 +22,6 @@ platform :ios do
       scheme: "A-Commerce",
     
       github: true,
-      cobertura_xml: true,
       sonarqube_xml: true, 
       html: true,
       
