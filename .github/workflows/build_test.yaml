@@ -18,6 +18,9 @@ jobs:
       with:
         ruby-version: '2.7'
 
+    - name: Install xcpretty
+      run: sudo gem install xcpretty
+      
     - name: Run unit test
       run: make test
     
