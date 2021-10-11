@@ -17,7 +17,7 @@ platform :ios do
       scheme: "A-Commerce", 
       build_directory: "./DerivedData", 
       output_directory: "./sonar-reports", 
-      proj: "./A-Commerce.xcodeproj"
+      proj: "./A-Commerce.xcodeproj",
       workspace: "./A-Commerce.xcworkspace"
     )
 
