@@ -4,22 +4,15 @@ platform :ios do
   desc "Run unit test and swiftlint"
   lane :metrics do
     derived_data_path = "./DerivedData"
-
-    scan(
-      workspace: "./A-Commerce.xcworkspace",
-      scheme: "A-Commerce", 
-      devices: "iPhone 11",
-      clean: true,
-      build_for_testing: true,
-      derived_data_path: derived_data_path
-    )
     
     scan(
       workspace: "./A-Commerce.xcworkspace",
       scheme: "A-Commerce", 
       devices: "iPhone 11",
+
+      clean: true,
       code_coverage: true,
-      test_without_building: true,
+
       derived_data_path: derived_data_path
     )
 
