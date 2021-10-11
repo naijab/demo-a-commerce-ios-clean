@@ -1,0 +1,1135 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.3534482758620690" branch-rate="0.2800000000000000" lines-covered="164" lines-valid="464" branches-covered="42" branches-valid="150" complexity="0.0" timestamp="1633961911" version="Slather 2.7.2">
+  <sources>
+    <source>/Users/naijab/Project/playground/a-commerce</source>
+  </sources>
+  <packages>
+    <package name="A-Commerce" line-rate="0.3737373737373738" branch-rate="0.2333333333333333" complexity="0.0">
+      <classes>
+        <class name="AppDelegate" filename="A-Commerce/AppDelegate.swift" line-rate="0.2786885245901639" branch-rate="0.1363636363636364" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="16" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="17" branch="false" hits="1"/>
+            <line number="18" branch="false" hits="1"/>
+            <line number="19" branch="false" hits="1"/>
+            <line number="20" branch="false" hits="1"/>
+            <line number="21" branch="false" hits="1"/>
+            <line number="23" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="24" branch="false" hits="1"/>
+            <line number="25" branch="false" hits="1"/>
+            <line number="26" branch="false" hits="1"/>
+            <line number="27" branch="false" hits="1"/>
+            <line number="28" branch="false" hits="1"/>
+            <line number="32" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="33" branch="false" hits="1"/>
+            <line number="34" branch="false" hits="1"/>
+            <line number="35" branch="false" hits="1"/>
+            <line number="36" branch="false" hits="1"/>
+            <line number="38" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="39" branch="false" hits="0"/>
+            <line number="40" branch="false" hits="0"/>
+            <line number="41" branch="false" hits="0"/>
+            <line number="42" branch="false" hits="0"/>
+            <line number="46" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="47" branch="false" hits="0"/>
+            <line number="48" branch="false" hits="0"/>
+            <line number="49" branch="false" hits="0"/>
+            <line number="50" branch="false" hits="0"/>
+            <line number="51" branch="false" hits="0"/>
+            <line number="52" branch="false" hits="0"/>
+            <line number="53" branch="false" hits="0"/>
+            <line number="54" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="55" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="56" branch="false" hits="0"/>
+            <line number="57" branch="false" hits="0"/>
+            <line number="58" branch="false" hits="0"/>
+            <line number="59" branch="false" hits="0"/>
+            <line number="60" branch="false" hits="0"/>
+            <line number="61" branch="false" hits="0"/>
+            <line number="62" branch="false" hits="0"/>
+            <line number="63" branch="false" hits="0"/>
+            <line number="64" branch="false" hits="0"/>
+            <line number="65" branch="false" hits="0"/>
+            <line number="66" branch="false" hits="0"/>
+            <line number="67" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="68" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="69" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="70" branch="false" hits="0"/>
+            <line number="71" branch="false" hits="0"/>
+            <line number="75" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="76" branch="false" hits="0"/>
+            <line number="77" branch="true" hits="0" condition-coverage="0% (0/3)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="78" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="79" branch="false" hits="0"/>
+            <line number="80" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="81" branch="false" hits="0"/>
+            <line number="82" branch="false" hits="0"/>
+            <line number="83" branch="false" hits="0"/>
+            <line number="84" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="85" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="86" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="87" branch="false" hits="0"/>
+          </lines>
+        </class>
+        <class name="SceneDelegate" filename="A-Commerce/SceneDelegate.swift" line-rate="0.5263157894736842" branch-rate="0.5000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="15" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="16" branch="true" hits="1" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="50%"/>
+              </conditions>
+            </line>
+            <line number="17" branch="false" hits="1"/>
+            <line number="18" branch="false" hits="1"/>
+            <line number="19" branch="false" hits="1"/>
+            <line number="20" branch="false" hits="1"/>
+            <line number="21" branch="false" hits="1"/>
+            <line number="22" branch="false" hits="1"/>
+            <line number="23" branch="false" hits="1"/>
+            <line number="24" branch="false" hits="1"/>
+            <line number="25" branch="false" hits="1"/>
+            <line number="26" branch="false" hits="1"/>
+            <line number="28" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="29" branch="false" hits="0"/>
+            <line number="30" branch="false" hits="0"/>
+            <line number="31" branch="false" hits="0"/>
+            <line number="32" branch="false" hits="0"/>
+            <line number="33" branch="false" hits="0"/>
+            <line number="35" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="36" branch="false" hits="1"/>
+            <line number="37" branch="false" hits="1"/>
+            <line number="38" branch="false" hits="1"/>
+            <line number="40" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="41" branch="false" hits="0"/>
+            <line number="42" branch="false" hits="0"/>
+            <line number="43" branch="false" hits="0"/>
+            <line number="45" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="46" branch="false" hits="1"/>
+            <line number="47" branch="false" hits="1"/>
+            <line number="48" branch="false" hits="1"/>
+            <line number="50" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="51" branch="false" hits="0"/>
+            <line number="52" branch="false" hits="0"/>
+            <line number="53" branch="false" hits="0"/>
+            <line number="54" branch="false" hits="0"/>
+            <line number="55" branch="false" hits="0"/>
+            <line number="56" branch="false" hits="0"/>
+            <line number="57" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="A-Commerce.CustomView" line-rate="0.4736842105263158" branch-rate="0.4000000000000000" complexity="0.0">
+      <classes>
+        <class name="ErrorView" filename="A-Commerce/CustomView/ErrorView.swift" line-rate="0.4736842105263158" branch-rate="0.4000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="22" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="23" branch="false" hits="0"/>
+            <line number="24" branch="false" hits="0"/>
+            <line number="25" branch="false" hits="0"/>
+            <line number="27" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="28" branch="false" hits="1"/>
+            <line number="29" branch="false" hits="1"/>
+            <line number="30" branch="false" hits="1"/>
+            <line number="32" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="33" branch="false" hits="1"/>
+            <line number="34" branch="false" hits="1"/>
+            <line number="35" branch="false" hits="1"/>
+            <line number="36" branch="false" hits="1"/>
+            <line number="38" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="39" branch="false" hits="0"/>
+            <line number="40" branch="false" hits="0"/>
+            <line number="42" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="43" branch="false" hits="0"/>
+            <line number="44" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="A-Commerce.Domain.Entities" line-rate="0.3076923076923077" branch-rate="0.1428571428571428" complexity="0.0">
+      <classes>
+        <class name="Product" filename="A-Commerce/Domain/Entities/Product.swift" line-rate="0.3076923076923077" branch-rate="0.1428571428571428" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="19" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="20" branch="false" hits="0"/>
+            <line number="21" branch="false" hits="0"/>
+            <line number="23" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="24" branch="false" hits="0"/>
+            <line number="25" branch="false" hits="0"/>
+            <line number="26" branch="false" hits="0"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="29" branch="false" hits="0"/>
+            <line number="30" branch="false" hits="0"/>
+            <line number="32" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="33" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="34" branch="false" hits="0"/>
+            <line number="35" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="36" branch="false" hits="0"/>
+            <line number="37" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="38" branch="false" hits="0"/>
+            <line number="47" branch="true" hits="2" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="48" branch="false" hits="2"/>
+            <line number="49" branch="false" hits="2"/>
+            <line number="50" branch="false" hits="2"/>
+            <line number="51" branch="false" hits="2"/>
+            <line number="52" branch="false" hits="2"/>
+            <line number="53" branch="false" hits="2"/>
+            <line number="54" branch="false" hits="2"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="A-Commerce.Domain" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="ErrorType" filename="A-Commerce/Domain/ErrorType.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="13" branch="true" hits="2" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="14" branch="false" hits="2"/>
+            <line number="15" branch="false" hits="2"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="A-Commerce.Extension" line-rate="0.0000000000000000" branch-rate="0.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="UIViewExtension" filename="A-Commerce/Extension/UIViewExtension.swift" line-rate="0.0000000000000000" branch-rate="0.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="11" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="12" branch="false" hits="0"/>
+            <line number="13" branch="false" hits="0"/>
+            <line number="15" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="16" branch="false" hits="0"/>
+            <line number="17" branch="false" hits="0"/>
+            <line number="18" branch="false" hits="0"/>
+            <line number="19" branch="false" hits="0"/>
+            <line number="20" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="A-Commerce.Features.ProductDetail" line-rate="0.0000000000000000" branch-rate="0.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="ProductDetailConfigurator" filename="A-Commerce/Features/ProductDetail/ProductDetailConfigurator.swift" line-rate="0.0000000000000000" branch-rate="0.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="21" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="22" branch="false" hits="0"/>
+            <line number="23" branch="false" hits="0"/>
+            <line number="26" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="29" branch="false" hits="0"/>
+            <line number="30" branch="false" hits="0"/>
+            <line number="31" branch="false" hits="0"/>
+            <line number="32" branch="false" hits="0"/>
+            <line number="33" branch="false" hits="0"/>
+            <line number="34" branch="false" hits="0"/>
+            <line number="35" branch="false" hits="0"/>
+            <line number="36" branch="false" hits="0"/>
+            <line number="37" branch="false" hits="0"/>
+            <line number="38" branch="false" hits="0"/>
+            <line number="39" branch="false" hits="0"/>
+            <line number="40" branch="false" hits="0"/>
+            <line number="41" branch="false" hits="0"/>
+            <line number="42" branch="false" hits="0"/>
+            <line number="43" branch="false" hits="0"/>
+          </lines>
+        </class>
+        <class name="ProductDetailInteractor" filename="A-Commerce/Features/ProductDetail/ProductDetailInteractor.swift" line-rate="0.0000000000000000" branch-rate="0.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="26" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="29" branch="false" hits="0"/>
+            <line number="33" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="34" branch="false" hits="0"/>
+            <line number="35" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="36" branch="false" hits="0"/>
+            <line number="37" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="38" branch="false" hits="0"/>
+            <line number="39" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="40" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="41" branch="false" hits="0"/>
+            <line number="42" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="43" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="44" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="45" branch="false" hits="0"/>
+          </lines>
+        </class>
+        <class name="ProductDetailPresenter" filename="A-Commerce/Features/ProductDetail/ProductDetailPresenter.swift" line-rate="0.0000000000000000" branch-rate="0.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="16" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="17" branch="false" hits="0"/>
+            <line number="18" branch="false" hits="0"/>
+            <line number="22" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="23" branch="false" hits="0"/>
+            <line number="24" branch="false" hits="0"/>
+            <line number="26" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="30" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="31" branch="false" hits="0"/>
+            <line number="32" branch="false" hits="0"/>
+            <line number="34" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="35" branch="false" hits="0"/>
+            <line number="36" branch="false" hits="0"/>
+          </lines>
+        </class>
+        <class name="ProductDetailViewController" filename="A-Commerce/Features/ProductDetail/ProductDetailViewController.swift" line-rate="0.0000000000000000" branch-rate="0.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="34" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="35" branch="false" hits="0"/>
+            <line number="36" branch="false" hits="0"/>
+            <line number="37" branch="false" hits="0"/>
+            <line number="38" branch="false" hits="0"/>
+            <line number="39" branch="false" hits="0"/>
+            <line number="41" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="42" branch="false" hits="0"/>
+            <line number="43" branch="false" hits="0"/>
+            <line number="45" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="46" branch="false" hits="0"/>
+            <line number="47" branch="false" hits="0"/>
+            <line number="48" branch="false" hits="0"/>
+            <line number="49" branch="false" hits="0"/>
+            <line number="51" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="52" branch="false" hits="0"/>
+            <line number="53" branch="false" hits="0"/>
+            <line number="54" branch="false" hits="0"/>
+            <line number="55" branch="false" hits="0"/>
+            <line number="59" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="60" branch="false" hits="0"/>
+            <line number="61" branch="false" hits="0"/>
+            <line number="62" branch="false" hits="0"/>
+            <line number="64" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="65" branch="false" hits="0"/>
+            <line number="66" branch="false" hits="0"/>
+            <line number="67" branch="false" hits="0"/>
+            <line number="69" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="70" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="71" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="72" branch="false" hits="0"/>
+            <line number="73" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="74" branch="false" hits="0"/>
+            <line number="75" branch="false" hits="0"/>
+            <line number="76" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="77" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="78" branch="false" hits="0"/>
+            <line number="79" branch="false" hits="0"/>
+            <line number="80" branch="false" hits="0"/>
+            <line number="81" branch="false" hits="0"/>
+            <line number="82" branch="false" hits="0"/>
+            <line number="84" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="85" branch="false" hits="0"/>
+            <line number="86" branch="false" hits="0"/>
+            <line number="87" branch="false" hits="0"/>
+            <line number="88" branch="false" hits="0"/>
+            <line number="89" branch="false" hits="0"/>
+            <line number="91" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="92" branch="false" hits="0"/>
+            <line number="93" branch="false" hits="0"/>
+            <line number="94" branch="false" hits="0"/>
+            <line number="95" branch="false" hits="0"/>
+            <line number="96" branch="false" hits="0"/>
+            <line number="97" branch="false" hits="0"/>
+            <line number="101" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="102" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="103" branch="false" hits="0"/>
+            <line number="104" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="105" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="A-Commerce.Features.ProductList" line-rate="0.6666666666666666" branch-rate="0.7027027027027027" complexity="0.0">
+      <classes>
+        <class name="ProductListConfigurator" filename="A-Commerce/Features/ProductList/ProductListConfigurator.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="16" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="17" branch="false" hits="1"/>
+            <line number="18" branch="false" hits="1"/>
+            <line number="19" branch="false" hits="1"/>
+            <line number="20" branch="false" hits="1"/>
+            <line number="21" branch="false" hits="1"/>
+            <line number="22" branch="false" hits="1"/>
+            <line number="23" branch="false" hits="1"/>
+            <line number="24" branch="false" hits="1"/>
+            <line number="25" branch="false" hits="1"/>
+            <line number="26" branch="false" hits="1"/>
+            <line number="27" branch="false" hits="1"/>
+            <line number="28" branch="false" hits="1"/>
+            <line number="29" branch="false" hits="1"/>
+            <line number="30" branch="false" hits="1"/>
+            <line number="31" branch="false" hits="1"/>
+            <line number="32" branch="false" hits="1"/>
+            <line number="33" branch="false" hits="1"/>
+          </lines>
+        </class>
+        <class name="ProductListInteractor" filename="A-Commerce/Features/ProductList/ProductListInteractor.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="26" branch="true" hits="5" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="27" branch="false" hits="5"/>
+            <line number="28" branch="false" hits="5"/>
+            <line number="29" branch="false" hits="5"/>
+            <line number="33" branch="true" hits="7" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="34" branch="false" hits="7"/>
+            <line number="35" branch="true" hits="4" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="36" branch="false" hits="4"/>
+            <line number="37" branch="true" hits="2" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="38" branch="false" hits="2"/>
+            <line number="39" branch="true" hits="2" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="40" branch="true" hits="2" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="41" branch="false" hits="2"/>
+            <line number="42" branch="true" hits="2" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="43" branch="true" hits="4" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="44" branch="true" hits="4" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="45" branch="false" hits="7"/>
+          </lines>
+        </class>
+        <class name="ProductListPresenter" filename="A-Commerce/Features/ProductList/ProductListPresenter.swift" line-rate="0.8000000000000000" branch-rate="0.8000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="16" branch="true" hits="3" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="17" branch="false" hits="3"/>
+            <line number="18" branch="false" hits="3"/>
+            <line number="22" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="23" branch="false" hits="1"/>
+            <line number="24" branch="false" hits="1"/>
+            <line number="26" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="30" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="31" branch="false" hits="1"/>
+            <line number="32" branch="false" hits="1"/>
+            <line number="34" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="35" branch="false" hits="1"/>
+            <line number="36" branch="false" hits="1"/>
+          </lines>
+        </class>
+        <class name="ProductListRouter" filename="A-Commerce/Features/ProductList/ProductListRouter.swift" line-rate="0.3750000000000000" branch-rate="0.5000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="17" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="18" branch="false" hits="1"/>
+            <line number="19" branch="false" hits="1"/>
+            <line number="23" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="24" branch="false" hits="0"/>
+            <line number="25" branch="false" hits="0"/>
+            <line number="26" branch="false" hits="0"/>
+            <line number="27" branch="false" hits="0"/>
+          </lines>
+        </class>
+        <class name="ProductListViewController" filename="A-Commerce/Features/ProductList/ProductListViewController.swift" line-rate="0.5348837209302325" branch-rate="0.5500000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="25" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="32" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="33" branch="false" hits="1"/>
+            <line number="34" branch="false" hits="1"/>
+            <line number="35" branch="false" hits="1"/>
+            <line number="36" branch="false" hits="1"/>
+            <line number="37" branch="false" hits="1"/>
+            <line number="38" branch="false" hits="1"/>
+            <line number="39" branch="false" hits="1"/>
+            <line number="40" branch="false" hits="1"/>
+            <line number="42" branch="true" hits="2" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="43" branch="false" hits="2"/>
+            <line number="44" branch="false" hits="2"/>
+            <line number="45" branch="false" hits="2"/>
+            <line number="47" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="48" branch="false" hits="1"/>
+            <line number="49" branch="false" hits="1"/>
+            <line number="51" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="52" branch="false" hits="1"/>
+            <line number="53" branch="false" hits="1"/>
+            <line number="54" branch="false" hits="1"/>
+            <line number="55" branch="false" hits="1"/>
+            <line number="56" branch="false" hits="1"/>
+            <line number="57" branch="false" hits="1"/>
+            <line number="58" branch="false" hits="1"/>
+            <line number="59" branch="false" hits="1"/>
+            <line number="61" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="62" branch="false" hits="1"/>
+            <line number="63" branch="false" hits="1"/>
+            <line number="65" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="66" branch="false" hits="1"/>
+            <line number="67" branch="false" hits="1"/>
+            <line number="68" branch="false" hits="1"/>
+            <line number="72" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="73" branch="false" hits="1"/>
+            <line number="74" branch="false" hits="1"/>
+            <line number="75" branch="false" hits="1"/>
+            <line number="77" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="78" branch="false" hits="0"/>
+            <line number="79" branch="false" hits="0"/>
+            <line number="80" branch="false" hits="0"/>
+            <line number="82" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="83" branch="false" hits="0"/>
+            <line number="84" branch="false" hits="0"/>
+            <line number="85" branch="false" hits="0"/>
+            <line number="86" branch="false" hits="0"/>
+            <line number="88" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="89" branch="false" hits="0"/>
+            <line number="90" branch="false" hits="0"/>
+            <line number="91" branch="false" hits="0"/>
+            <line number="95" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="96" branch="false" hits="1"/>
+            <line number="97" branch="false" hits="1"/>
+            <line number="99" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="100" branch="false" hits="0"/>
+            <line number="101" branch="false" hits="0"/>
+            <line number="102" branch="false" hits="0"/>
+            <line number="103" branch="false" hits="0"/>
+            <line number="104" branch="false" hits="0"/>
+            <line number="105" branch="false" hits="0"/>
+            <line number="106" branch="false" hits="0"/>
+            <line number="107" branch="false" hits="0"/>
+            <line number="108" branch="false" hits="0"/>
+            <line number="112" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="113" branch="false" hits="0"/>
+            <line number="114" branch="false" hits="0"/>
+            <line number="115" branch="false" hits="0"/>
+            <line number="116" branch="false" hits="0"/>
+            <line number="117" branch="false" hits="0"/>
+            <line number="118" branch="false" hits="0"/>
+            <line number="119" branch="false" hits="0"/>
+            <line number="120" branch="false" hits="0"/>
+            <line number="122" branch="true" hits="2" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="123" branch="false" hits="2"/>
+            <line number="124" branch="false" hits="2"/>
+            <line number="126" branch="true" hits="2" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="127" branch="false" hits="2"/>
+            <line number="128" branch="false" hits="2"/>
+            <line number="132" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="133" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="134" branch="false" hits="0"/>
+            <line number="135" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="136" branch="false" hits="0"/>
+            <line number="140" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="141" branch="false" hits="0"/>
+            <line number="142" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="A-Commerce.Features.ProductList.cell" line-rate="0.1764705882352941" branch-rate="0.0909090909090909" complexity="0.0">
+      <classes>
+        <class name="ProductCollectionViewCell" filename="A-Commerce/Features/ProductList/cell/ProductCollectionViewCell.swift" line-rate="0.1764705882352941" branch-rate="0.0909090909090909" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="15" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="16" branch="false" hits="1"/>
+            <line number="17" branch="false" hits="1"/>
+            <line number="25" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="26" branch="false" hits="0"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="29" branch="false" hits="0"/>
+            <line number="31" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="32" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="33" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="34" branch="false" hits="0"/>
+            <line number="35" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="36" branch="false" hits="0"/>
+            <line number="37" branch="false" hits="0"/>
+            <line number="38" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="39" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="A-Commerce.Worker" line-rate="0.2285714285714286" branch-rate="0.2105263157894737" complexity="0.0">
+      <classes>
+        <class name="ProductRemoteWorker" filename="A-Commerce/Worker/ProductRemoteWorker.swift" line-rate="0.0769230769230769" branch-rate="0.1250000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="15" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="16" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="17" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="18" branch="false" hits="0"/>
+            <line number="19" branch="false" hits="0"/>
+            <line number="20" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="21" branch="false" hits="0"/>
+            <line number="22" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="23" branch="false" hits="0"/>
+            <line number="24" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="25" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="26" branch="false" hits="0"/>
+            <line number="29" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="30" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="31" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="32" branch="false" hits="0"/>
+            <line number="33" branch="false" hits="0"/>
+            <line number="34" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="35" branch="false" hits="0"/>
+            <line number="36" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="37" branch="false" hits="0"/>
+            <line number="38" branch="true" hits="0" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="39" branch="false" hits="0"/>
+            <line number="40" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="41" branch="true" hits="0" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="42" branch="false" hits="1"/>
+          </lines>
+        </class>
+        <class name="ProductWorker" filename="A-Commerce/Worker/ProductWorker.swift" line-rate="0.6666666666666666" branch-rate="0.6666666666666666" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="18" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="19" branch="false" hits="1"/>
+            <line number="20" branch="false" hits="1"/>
+            <line number="22" branch="true" hits="0" condition-coverage="0% (0/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="0%"/>
+              </conditions>
+            </line>
+            <line number="23" branch="false" hits="0"/>
+            <line number="24" branch="false" hits="0"/>
+            <line number="26" branch="true" hits="1" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%"/>
+              </conditions>
+            </line>
+            <line number="27" branch="false" hits="1"/>
+            <line number="28" branch="false" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
