@@ -12,7 +12,8 @@ platform :ios do
       clean: true,
       code_coverage: true,
 
-      derived_data_path: "./DerivedData"
+      derived_data_path: "./DerivedData",
+      output_directory: "./sonar-reports"
     )
 
     slather(
