@@ -5,6 +5,7 @@ platform :ios do
   lane :metrics do
     scan(
       scheme: "A-Commerce", 
+      clean: true,
       code_coverage: true, 
       derived_data_path: "./DerivedData", 
       output_directory: "./sonar-reports",
@@ -18,7 +19,8 @@ platform :ios do
       build_directory: "./DerivedData", 
       output_directory: "./sonar-reports", 
       proj: "./A-Commerce.xcodeproj",
-      workspace: "./A-Commerce.xcworkspace"
+      workspace: "./A-Commerce.xcworkspace",
+      ignore: ["Pods/*", "ThirdParty/*", "Frameworks/*"]
     )
 
     swiftlint(
